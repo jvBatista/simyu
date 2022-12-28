@@ -14,7 +14,6 @@ export const Container = styled.TouchableOpacity<ButtonVariants>`
   background-color: ${({ theme, variant }) => variant === "default" ? theme.colors.orange : 'transparent'};
   border-width: ${({ variant }) => variant === "default" ? '0px' : '1px'};
   border-color: ${({ theme, variant }) => variant === "default" ? 'transparent' : theme.colors.white};
-  margin-left: 16px;
 `;
 
 export const ButtonText = styled.Text<ButtonVariants>`

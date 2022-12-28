@@ -13,7 +13,7 @@ export const Container = styled.View`
 
 export const Input = styled.TextInput`
     color: white;
-    font-family: ${({ theme }) => theme.fonts.regular};
+    font-family: ${({ theme }) => theme.fonts.medium};
     font-size: 20px;
     display: flex;
     align-items: center;

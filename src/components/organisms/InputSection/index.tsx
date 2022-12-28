@@ -3,7 +3,7 @@ import { CircleButton } from '../../atoms/CircleButton';
 import { CurrencyInput } from '../../atoms/CurrencyInput';
 import { LabeledInput } from '../../atoms/LabeledInput';
 import { RegularText } from '../../atoms/RegularText';
-import { ButtonContainer, Container, InputRow } from './styles';
+import { ButtonContainer, ButtonsContainer, Container, InputRow } from './styles';
 
 interface InputSectionProps {
   label: string,
@@ -60,10 +60,15 @@ export const InputSection = ({
           />
         }
 
-        <ButtonContainer>
-          <CircleButton buttonFunction={decreaseValue} variant="secondary" />
-          <CircleButton buttonFunction={increaseValue} />
-        </ButtonContainer>
+        <ButtonsContainer>
+          <ButtonContainer>
+            <CircleButton buttonFunction={decreaseValue} variant="secondary" />
+          </ButtonContainer>
+
+          <ButtonContainer>
+            <CircleButton buttonFunction={increaseValue} />
+          </ButtonContainer>
+        </ButtonsContainer>
       </InputRow>
     </Container >
   );

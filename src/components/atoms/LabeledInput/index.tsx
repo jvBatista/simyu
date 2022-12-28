@@ -46,7 +46,7 @@ export const LabeledInput = ({
         onChangeText={handleTextChange}
         keyboardType='numeric'
       />
-      <RegularText size='larger'>{label}</RegularText>
+      <RegularText size='larger' weight='medium'>{label}</RegularText>
     </Container >
   );
 };

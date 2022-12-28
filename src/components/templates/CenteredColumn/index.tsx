@@ -1,18 +1,14 @@
 import React from 'react';
-import {
-  Container,
-  CustomText
-} from './styles';
+import { Container } from './styles';
 
 interface CenteredColumnProps {
-  prop1: boolean,
-  prop2: string;
+  children: React.ReactNode[] | React.ReactNode
 }
 
-export const CenteredColumn = ({ prop1, prop2 }: CenteredColumnProps) => {
+export const CenteredColumn = ({ children }: CenteredColumnProps) => {
   return (
     <Container>
-      <CustomText>Open up App.js to start working on your app!</CustomText>
+      {children}
     </Container >
   );
 };

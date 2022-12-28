@@ -11,8 +11,12 @@ export const InputRow = styled.View`
     flex-direction: row;
 `;
 
-export const ButtonContainer = styled.View`
+export const ButtonsContainer = styled.View`
     display: flex;
     flex-direction: row;
     padding-left: 8px;
+`;
+
+export const ButtonContainer = styled.View`
+    margin-left: 16px;
 `;
