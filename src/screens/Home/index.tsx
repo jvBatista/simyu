@@ -1,11 +1,13 @@
+import { setStatusBarNetworkActivityIndicatorVisible } from 'expo-status-bar';
 import React, { useEffect, useState } from 'react';
 import { Title } from '../../components/atoms/Title';
 import { Checkbox } from '../../components/molecules/Checkbox';
 import { RadioButton } from '../../components/molecules/RadioButton';
-import { YieldField } from '../../components/molecules/YieldField';
+import { IncomeField } from '../../components/molecules/IncomeField';
 import { InputSection } from '../../components/organisms/InputSection';
 import { SingleColumn } from '../../components/templates/SingleColumn';
-import { calculateIOFRate, calculateIRRate, calculateYield } from '../../utils/finCalc';
+import { calculateIOFRate, calculateIRRate, calculateIncome } from '../../utils/finCalc';
+import { periodLabels, taxLabels } from '../../utils/labels';
 import { CheckboxContainer, OptionsInputContainer, RadioContainer } from './styles';
 
 export const Home = () => {
@@ -18,7 +20,7 @@ export const Home = () => {
     const [applyIR, setApplyIR] = useState(true);
     const [applyIOF, setApplyIOF] = useState(true);
 
-    const [yieldResults, setYieldResults] = useState<{
+    const [incomeResults, setIncomeResults] = useState<{
         totalAmount: number,
         amountMinusIncome: number,
         grossIncome: number,
@@ -34,20 +36,8 @@ export const Home = () => {
         iofDiscountedValue: 0
     });
 
-    const taxLabels = {
-        cdi: '% do CDI',
-        aa: '% ao ano',
-        am: '% ao mês'
-    };
-
-    const periodLabels = {
-        year: ' anos',
-        month: ' meses',
-        day: ' dias'
-    };
-
     useEffect(() => {
-        setYieldResults(calculateYield({
+        setIncomeResults(calculateIncome({
             period,
             timeUnit,
             rateType,
@@ -90,15 +80,18 @@ export const Home = () => {
                         <RadioButton
                             label="CDI"
                             buttonFunction={() => setRateType('cdi')}
-                            checked={rateType == 'cdi'} />
+                            checked={rateType == 'cdi'}
+                        />
                         <RadioButton
                             label="% a.a"
                             buttonFunction={() => setRateType('aa')}
-                            checked={rateType == 'aa'} />
+                            checked={rateType == 'aa'}
+                        />
                         <RadioButton
                             label="% a.m"
                             buttonFunction={() => setRateType('am')}
-                            checked={rateType == 'am'} />
+                            checked={rateType == 'am'}
+                        />
                     </RadioContainer>
 
                     <InputSection
@@ -144,21 +137,23 @@ export const Home = () => {
                     <Checkbox
                         checked={applyIR}
                         label={'aplicar imposto de renda'}
-                        buttonFunction={() => setApplyIR(!applyIR)} />
+                        buttonFunction={() => setApplyIR(!applyIR)}
+                    />
                     <Checkbox
                         checked={applyIOF}
                         label={'aplicar IOF'}
-                        buttonFunction={() => setApplyIOF(!applyIOF)} />
+                        buttonFunction={() => setApplyIOF(!applyIOF)}
+                    />
                 </CheckboxContainer>
 
             </SingleColumn>
-            <YieldField
+            <IncomeField
                 period={`${period}${periodLabels[timeUnit]}`}
-                yieldValue={yieldResults.netIncome}
-                totalValue={yieldResults.totalAmount}
-                grossIncome={yieldResults.grossIncome}
-                IRValue={yieldResults.irDiscountedValue}
-                IOFValue={yieldResults.iofDiscountedValue}
+                incomeValue={incomeResults.netIncome}
+                totalValue={incomeResults.totalAmount}
+                grossIncome={incomeResults.grossIncome}
+                IRValue={incomeResults.irDiscountedValue}
+                IOFValue={incomeResults.iofDiscountedValue}
             />
         </>
     );

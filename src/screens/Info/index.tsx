@@ -4,17 +4,11 @@ import { Title } from '../../components/atoms/Title';
 import { ContentRow } from '../../components/molecules/ContentRow';
 import { TableRow } from '../../components/molecules/TableRow';
 import { SingleColumn } from '../../components/templates/SingleColumn';
+import { IRLabels } from '../../utils/labels';
 import { IOF, IR } from '../../utils/taxes';
 import { Row } from './styles';
 
 export const Info = () => {
-
-  const IRLabels = [
-    "Até 180 dias (6 meses)",
-    "De 181 a 360 dias (1 ano)",
-    "De 361 a 720 dias (2 anos)",
-    "Acima de 720 dias (+ 2 anos)"
-  ];
 
   const IRData = IR.map((element, index) => (
     {
