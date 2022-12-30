@@ -1,7 +1,7 @@
 import styled from "styled-components/native";
 
 export const Container = styled.View`
-    width: 100%;
+    flex-grow: 1;
     padding-bottom: 4px;
     display: flex;
     flex-direction: row;
@@ -12,7 +12,6 @@ export const Container = styled.View`
 `;
 
 export const Input = styled.TextInput`
-    width: 100%;
     color: white;
     font-family: ${({ theme }) => theme.fonts.medium};
     font-size: 20px;

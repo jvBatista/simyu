@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import { Image } from 'react-native';
 import { InvestProps } from '../../../screens/Comparison';
 import { taxLabels } from '../../../utils/labels';
-import { ArrowDown } from '../../atoms/Icons/Icons';
+import { ArrowDown, InvestIcon, TrashIcon } from '../../atoms/Icons/Icons';
 import { RegularInput } from '../../atoms/RegularInput';
 import { RegularText } from '../../atoms/RegularText';
 import { Checkbox } from '../../molecules/Checkbox';
 import { RadioButton } from '../../molecules/RadioButton';
 import { InputSection } from '../InputSection';
 import {
+  ArrowButton,
   Button,
   CenteredRow,
   CheckboxContainer,
@@ -20,13 +20,20 @@ import {
 } from './styles';
 
 interface InvestCardProps {
-  id: number;
-  updateData: (id: number, data: InvestProps) => void;
-  initialValue: number;
+  id: number,
+  updateData: (id: number, data: InvestProps) => void,
+  deleteInvest: (id: number) => void,
+  initialValue: number,
   monthlyAdd: number
 }
 
-export const InvestCard = ({ id, updateData, initialValue, monthlyAdd }: InvestCardProps) => {
+export const InvestCard = ({
+  id,
+  updateData,
+  deleteInvest,
+  initialValue,
+  monthlyAdd
+}: InvestCardProps) => {
   const [name, setName] = useState(`Investimento ${id + 1}`);
   const [incomeRate, setIncomeRate] = useState(100);
   const [rateType, setRateType] = useState<'cdi' | 'aa' | 'am'>('cdi');
@@ -36,12 +43,15 @@ export const InvestCard = ({ id, updateData, initialValue, monthlyAdd }: InvestC
 
   useEffect(() => {
     updateData(id, {
+      id,
+      name,
       incomeRate,
       rateType,
       applyIOF,
       applyIR
     });
   }, [
+    name,
     incomeRate,
     rateType,
     applyIOF,
@@ -50,11 +60,18 @@ export const InvestCard = ({ id, updateData, initialValue, monthlyAdd }: InvestC
     monthlyAdd
   ]);
 
+
   return (
     <Container>
       {
         opened ? (
-          <RegularInput value={name} setValue={setName} />
+          <Row>
+            <RegularInput value={name} setValue={setName} />
+
+            <Button onPress={() => deleteInvest(id)} style={{ paddingLeft: 24 }}>
+              <TrashIcon red/>
+            </Button>
+          </Row>
         ) : (
           <Row>
             <RegularText
@@ -65,10 +82,7 @@ export const InvestCard = ({ id, updateData, initialValue, monthlyAdd }: InvestC
               {name}
             </RegularText>
 
-            <Image
-              style={{ width: 24, height: 24 }}
-              source={require('../../../assets/monitoring.png')}
-            />
+            <InvestIcon id={id} />
           </Row>
         )
       }
@@ -118,9 +132,9 @@ export const InvestCard = ({ id, updateData, initialValue, monthlyAdd }: InvestC
       }
 
       <CenteredRow>
-        <Button onPress={() => setOpened(!opened)} rotate={opened}>
+        <ArrowButton onPress={() => setOpened(!opened)} rotate={opened}>
           <ArrowDown width={16} />
-        </Button>
+        </ArrowButton>
       </CenteredRow>
     </Container >
   );

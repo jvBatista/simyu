@@ -13,21 +13,15 @@ export const InfoRow = styled.View`
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-between;
-  /* padding-top: 2px; */
-  /* padding-bottom: 4px; */
+  padding-bottom: 4px;
 `;
 
 export const HeaderContainer = styled.View`
   width: 100%;
-  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
   padding: 8px 0px;
-`;
-
-export const Line = styled.View`
-  width: 100%;
-  border-color: ${({ theme }) => theme.colors.white};
-  border-bottom-width: 1px;
-  margin: 8px 0px;
 `;
 
 export const CenteredRow = styled(InfoRow)`
@@ -55,5 +49,6 @@ interface Details {
 export const DetailsContainer = styled.View<Details>`
   width: 100%;
   padding-top: 16px;
+  padding-bottom: 24px;
   display: ${({ opened }) => opened ? 'flex' : 'none'};
 `;

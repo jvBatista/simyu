@@ -1,5 +1,5 @@
 import React from 'react';
-import Svg, { Circle, Path } from 'react-native-svg';
+import Svg, { Circle, Mask, Path, G } from 'react-native-svg';
 import theme from '../../../theme';
 
 export const RadioCircle = () => (
@@ -108,5 +108,65 @@ export const CheckIcon = () => (
     <Path
       d="M6.97503 13.1734C6.53259 13.172 6.10632 13.0048 5.78113 12.7048L0.573793 7.95806C0.228756 7.64226 0.0229292 7.20249 0.00138835 6.73528C-0.0201525 6.26807 0.144452 5.81143 0.458967 5.46523C0.774809 5.12024 1.21464 4.91444 1.68191 4.8929C2.14918 4.87136 2.60609 5.03573 2.95234 5.3502L8.1683 10.0972C8.51334 10.413 8.71917 10.8525 8.74071 11.3197C8.76225 11.787 8.59765 12.2438 8.28313 12.59C8.11782 12.7731 7.91621 12.9196 7.69087 13.0201C7.46552 13.1206 7.22177 13.1728 6.97503 13.1734Z"
     />
+  </Svg>
+)
+
+export const InvestIcon = ({ id }) => (
+  <Svg
+    width={24}
+    height={24}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <Mask
+      id="a"
+      style={{
+        maskType: "alpha"
+      }}
+      maskUnits="userSpaceOnUse"
+      x={0}
+      y={0}
+      width={24}
+      height={24}
+    >
+      <Path fill="#D9D9D9" d="M0 0.199951H24V22.999951H0z" />
+    </Mask>
+    <G mask="url(#a)">
+      <Path
+        d="M3 20.15v-1.9l2-1.9v3.8H3zm4 0v-5.7l2-1.9v7.6H7zm4 0v-7.6l2 1.924v5.676h-2zm4 0v-5.676l2-1.9v7.576h-2zm4 0v-9.5l2-1.9v11.4h-2zM3 15.234V12.55l7-6.65 4 3.8 7-6.65v2.684l-7 6.65-4-3.8-7 6.65z"
+        fill={id % 2 == 0 ? theme.colors.cyan : theme.colors.orange}
+      />
+    </G>
+  </Svg>
+)
+
+export const TrashIcon = ({ red = false }) => (
+  <Svg
+    width={24}
+    height={24}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <Mask
+      id="a"
+      style={{
+        maskType: "alpha"
+      }}
+      maskUnits="userSpaceOnUse"
+      x={0}
+      y={0}
+      width={24}
+      height={24}
+    >
+      <Path fill="#D9D9D9" d="M0 0H24V24H0z" />
+    </Mask>
+    <G mask="url(#a)">
+      <Path
+        d="M7 21c-.55 0-1.02-.196-1.412-.587A1.927 1.927 0 015 19V6H4V4h5V3h6v1h5v2h-1v13c0 .55-.196 1.021-.587 1.413A1.928 1.928 0 0117 21H7zM17 6H7v13h10V6zM9 17h2V8H9v9zm4 0h2V8h-2v9z"
+        fill={red ? theme.colors.red : theme.colors.white}
+      />
+    </G>
   </Svg>
 )

@@ -16,7 +16,6 @@ export const RegularInput = ({
       <Input
         value={value}
         onChangeText={setValue}
-        keyboardType='numeric'
       />
     </Container >
   );

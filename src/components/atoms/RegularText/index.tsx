@@ -5,10 +5,11 @@ import {
 
 interface RegularTextProps {
   children: React.ReactNode,
-  size?: 'default' | 'smaller' | 'larger' | 'giant';
-  variant?: 'white' | 'cyan' | 'green' | 'red' | 'orange';
-  weight?: 'regular' | 'medium' | 'semibold';
-  spaced?: boolean;
+  size?: 'default' | 'smaller' | 'larger' | 'giant',
+  variant?: 'white' | 'cyan' | 'green' | 'red' | 'orange',
+  weight?: 'regular' | 'medium' | 'semibold',
+  spaced?: boolean,
+  numberOfLines?: number
 }
 
 export const RegularText = ({
@@ -17,6 +18,7 @@ export const RegularText = ({
   variant = 'white',
   weight = 'regular',
   spaced = false,
+  numberOfLines = 1
 }: RegularTextProps) => {
 
   const fontSizes = {
@@ -32,6 +34,7 @@ export const RegularText = ({
       variant={variant}
       weight={weight}
       spaced
+      numberOfLines={numberOfLines}
     >
       {children}
     </Text>

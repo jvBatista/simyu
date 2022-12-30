@@ -1,5 +1,6 @@
 import { IOF, IR } from "./taxes";
 
+const CDI = 13.65;
 
 const roundUp = (num: number, cases = 2) => {
     return +num.toFixed(cases);
@@ -15,8 +16,12 @@ const toMonthlyRate = (rate: number, rateType: string) => {
 
     if (rateType == 'aa')
         monthlyRate = (Math.pow(rateCoef, 1 / 12) - 1) * 100;
-    else
+    else if (rateType == 'cdi') {
+        const convertedRate = CDI * (rate / 100);
+        rateCoef = 1 + (convertedRate / 100);
+
         monthlyRate = (Math.pow(rateCoef, 1 / 12) - 1) * 100;
+    }
 
 
     return +monthlyRate.toFixed(3);
@@ -52,7 +57,7 @@ export const calculateIOFRate = (period: number, timeUnit: string) => {
     return tax ? tax : 0;
 }
 
-interface YieldCalcProps {
+interface IncomeCalcProps {
     period: number,
     timeUnit: string,
     rateType: string,
@@ -64,7 +69,7 @@ interface YieldCalcProps {
 };
 
 
-export const calculateYield = ({
+export const calculateIncome = ({
     period,
     timeUnit,
     rateType,
@@ -73,7 +78,7 @@ export const calculateYield = ({
     incomeRate,
     irRate,
     iofRate
-}: YieldCalcProps) => {
+}: IncomeCalcProps) => {
     // M = (C x ((1 + (i / 100)) ^ n)) + (a × (((((1 + (i / 100))) ^ n )− 1) ÷ (i / 100))
     let totalAmount, grossIncome, amountMinusIncome, netIncome;
 
@@ -88,7 +93,7 @@ export const calculateYield = ({
     amountMinusIncome = initialValue + (monthlyAdd * periodInMonths);
     grossIncome = roundUp(totalAmount - amountMinusIncome);
     netIncome = +roundUp((grossIncome * irCoef) * iofCoef).toFixed(2);
-    totalAmount = amountMinusIncome + netIncome;
+    totalAmount = roundUp(amountMinusIncome + netIncome);
 
     const irDiscountedValue = roundUp(grossIncome * (irRate / 100));
     const iofDiscountedValue = roundUp((grossIncome - irDiscountedValue) * (iofRate / 100));

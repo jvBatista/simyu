@@ -12,7 +12,7 @@ export const Row = styled.View`
   width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
 `;
 
@@ -22,16 +22,21 @@ export const CenteredRow = styled.View`
   padding-top: 8px;
 `;
 
+export const Button = styled.TouchableOpacity`
+  align-items: center;
+  justify-content: center;
+  transition: 100ms;
+`;
+
 interface ArrowButton {
   rotate: boolean;
 }
 
-export const Button = styled.TouchableOpacity<ArrowButton>`
-  display: flex;
+export const ArrowButton = styled.TouchableOpacity<ArrowButton>`
   align-items: center;
   justify-content: center;
-  transform: ${({ rotate }) => rotate ? 'rotate(180deg)' : 'rotate(0deg)'};
   transition: 100ms;
+  transform: ${({ rotate }) => rotate ? 'rotate(180deg)' : 'rotate(0deg)'};
 `;
 
 export const DetailsContainer = styled.View`
