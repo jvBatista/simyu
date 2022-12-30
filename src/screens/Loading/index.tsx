@@ -1,18 +1,11 @@
 import React from 'react';
-import {
-  Container,
-  CustomText
-} from './styles';
+import { ActivityIndicator } from 'react-native';
+import { CenteredColumn } from '../../components/templates/CenteredColumn';
 
-interface LoadingProps {
-  prop1: boolean,
-  prop2: string;
-}
-
-export const Loading = ({ prop1, prop2 }: LoadingProps) => {
+export const Loading = () => {
   return (
-    <Container>
-      <CustomText>Open up App.js to start working on your app!</CustomText>
-    </Container >
+    <CenteredColumn>
+      <ActivityIndicator size="large" color="#FF8205" />
+    </CenteredColumn >
   );
 };

@@ -18,8 +18,6 @@ export default function App() {
     'Urbanist_600SemiBold': require('./src/assets/fonts/Urbanist/Urbanist-SemiBold.ttf')
   });
 
-  if (!fontsLoaded) return <Loading />
-
   return (
     <ThemeProvider theme={theme}>
       <StatusBar
@@ -27,7 +25,9 @@ export default function App() {
         backgroundColor={theme.colors.ayu_900}
         barStyle={'light-content'}
       />
-      <Comparison />
+      {
+        !fontsLoaded ? <Loading /> : <Comparison />
+      }
     </ThemeProvider>
   );
 }
