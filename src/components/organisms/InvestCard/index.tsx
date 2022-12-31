@@ -20,11 +20,12 @@ import {
 } from './styles';
 
 interface InvestCardProps {
-  id: number,
-  updateData: (id: number, data: InvestProps) => void,
-  deleteInvest: (id: number) => void,
+  id: string,
+  updateData: (index: number, data: InvestProps) => void,
+  deleteInvest: (id: string) => void,
   initialValue: number,
-  monthlyAdd: number
+  monthlyAdd: number,
+  index: number
 }
 
 export const InvestCard = ({
@@ -32,9 +33,10 @@ export const InvestCard = ({
   updateData,
   deleteInvest,
   initialValue,
-  monthlyAdd
+  monthlyAdd,
+  index
 }: InvestCardProps) => {
-  const [name, setName] = useState(`Investimento ${id + 1}`);
+  const [name, setName] = useState(`Investimento ${index+1}`);
   const [incomeRate, setIncomeRate] = useState(100);
   const [rateType, setRateType] = useState<'cdi' | 'aa' | 'am'>('cdi');
   const [applyIR, setApplyIR] = useState(true);
@@ -42,7 +44,7 @@ export const InvestCard = ({
   const [opened, setOpened] = useState(false);
 
   useEffect(() => {
-    updateData(id, {
+    updateData(index, {
       id,
       name,
       incomeRate,
@@ -69,7 +71,7 @@ export const InvestCard = ({
             <RegularInput value={name} setValue={setName} />
 
             <Button onPress={() => deleteInvest(id)} style={{ paddingLeft: 24 }}>
-              <TrashIcon red/>
+              <TrashIcon red />
             </Button>
           </Row>
         ) : (
@@ -77,12 +79,12 @@ export const InvestCard = ({
             <RegularText
               size='larger'
               weight='semibold'
-              variant={id % 2 == 0 ? 'cyan' : 'orange'}
+              variant={index % 2 == 0 ? 'cyan' : 'orange'}
             >
               {name}
             </RegularText>
 
-            <InvestIcon id={id} />
+            <InvestIcon id={index} />
           </Row>
         )
       }

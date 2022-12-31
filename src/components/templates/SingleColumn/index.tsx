@@ -6,12 +6,13 @@ interface SingleColumnProps {
 }
 
 export const SingleColumn = ({ children }: SingleColumnProps) => {
+  const childrenList = children as React.ReactNode[];
   return (
     <Container>
       <ScrollArea nestedScrollEnabled={true}>
         {
-          (children as React.ReactNode[]).map((element, index) => (
-            <ChildContainer key={index}>
+          childrenList.map((element, index) => (
+            <ChildContainer key={index} isLast={index == (childrenList.length - 1)}>
               {element}
             </ChildContainer>
           ))

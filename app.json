@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "ayusim",
-    "slug": "ayusim",
+    "name": "simyu",
+    "slug": "simyu",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -9,7 +9,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#16192C"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -18,16 +18,16 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.batizta.simyu"
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
+      "package": "com.batizta.simyu"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "extra": {
+      "eas": {
+        "projectId": "4eef0ca2-7a36-4783-b0b2-e60176f8e53c"
+      }
     }
   }
 }

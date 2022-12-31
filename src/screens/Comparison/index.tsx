@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import { CircleButton } from '../../components/atoms/CircleButton';
-import { RegularText } from '../../components/atoms/RegularText';
 import { Title } from '../../components/atoms/Title';
 import { IncomeCompareField } from '../../components/molecules/IncomeCompareField';
-import { InputSlider } from '../../components/molecules/Slider';
 import { InputSection } from '../../components/organisms/InputSection';
 import { InvestCard } from '../../components/organisms/InvestCard';
 import { SingleColumn } from '../../components/templates/SingleColumn';
 import { calculateIOFRate, calculateIRRate, calculateIncome } from '../../utils/finCalc';
-import { CardContainer, CenteredRow, SliderContainer } from './styles';
+import { CardContainer, CenteredRow } from './styles';
+import { handlePeriodLabel } from '../../utils/labels';
+import { SliderInputSection } from '../../components/molecules/SliderInputSection';
 
 
 export interface InvestProps {
-  id: number,
+  id: string,
   name: string,
   incomeRate: number,
   rateType: 'cdi' | 'aa' | 'am',
@@ -25,7 +25,16 @@ export const Comparison = () => {
   const [monthlyAdd, setMonthlyAdd] = useState(100);
   const [periodInMonths, setPeriodInMonths] = useState(12);
   const [counter, setCounter] = useState(0);
-  const [investList, setInvestList] = useState<InvestProps[]>([]);
+  const [investList, setInvestList] = useState<InvestProps[]>([
+    {
+      id: new Date().getTime().toString(),
+      name: `Investimento ${1}`,
+      incomeRate: 100,
+      rateType: 'cdi',
+      applyIR: true,
+      applyIOF: true
+    }
+  ]);
 
   const months: number[] = [];
 
@@ -39,7 +48,7 @@ export const Comparison = () => {
     let newList = investList;
 
     newList.push({
-      id: counter,
+      id: new Date().getTime().toString(),
       name: `Investimento ${investList.length}`,
       incomeRate: 100,
       rateType: 'cdi',
@@ -51,24 +60,24 @@ export const Comparison = () => {
     setInvestList([...newList]);
   }
 
-  const updateInvestData = (id: number, data: InvestProps) => {
+  const updateInvestData = (index: number, data: InvestProps) => {
     let newList = investList;
-    newList[id] = data;
+    newList[index] = data;
 
     setInvestList([...newList]);
   }
 
-  const deleteInvest = (id: number) => {
+  const deleteInvest = (id: string) => {
     const item = investList.find(item => item.id == id);
     console.log(item);
 
     if (typeof item != "undefined") {
       const newList = [...investList];
-      console.log(newList[0] == item)
+
       const index = newList.indexOf(item);
       if (index > -1) newList.splice(index, 1);
 
-      setInvestList(newList);
+      setInvestList([...newList]);
     }
   }
 
@@ -91,24 +100,6 @@ export const Comparison = () => {
     setPeriodInMonths(months[value]);
   }
 
-  const handlePeriodLabel = () => {
-    const years = Math.floor(periodInMonths / 12);
-    const months = periodInMonths % 12;
-
-    let yearText, monthText;
-    if (months == 1) monthText = 'mês';
-    else monthText = 'meses';
-
-    if (years == 1) yearText = 'ano';
-    else yearText = 'anos';
-
-    if (!years) return `${months} ${monthText}`;
-    else if (!months) return `${years} ${yearText}`;
-
-    return `${years} ${yearText} e ${months} ${monthText}`
-  }
-
-
 
   return (
     <SingleColumn>
@@ -127,19 +118,18 @@ export const Comparison = () => {
         setValue={setMonthlyAdd}
       />
 
-      <SliderContainer>
-        <InputSlider
-          value={periodInMonths}
-          setValue={handleMonthSelection}
-          maxValue={months.length - 1}
-        />
-        <RegularText>{handlePeriodLabel()}</RegularText>
-      </SliderContainer>
+      <SliderInputSection
+        value={periodInMonths}
+        setValue={handleMonthSelection}
+        maxValue={months.length - 1}
+        label={'ao longo de'}
+      />
 
-      {investList.length ? investList.map(({ id }) => (
-        <CardContainer key={id}>
+      {investList.length ? investList.map(({ id }, index) => (
+        <CardContainer key={id} cardIndex={index}>
           <InvestCard
             id={id}
+            index={index}
             updateData={updateInvestData}
             deleteInvest={deleteInvest}
             initialValue={initialValue}
@@ -151,10 +141,9 @@ export const Comparison = () => {
       <CenteredRow>
         <CircleButton buttonFunction={createNewInvest} />
       </CenteredRow>
-
       {investList.length ?
         <IncomeCompareField
-          period={handlePeriodLabel()}
+          period={handlePeriodLabel(periodInMonths)}
           investIncomeList={investList.map((item) => {
             const { totalAmount, netIncome } = calculateInvestIncome(item);
 

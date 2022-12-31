@@ -2,20 +2,17 @@ import React from "react";
 import { StatusBar } from "react-native";
 import { useFonts } from "expo-font";
 import { ThemeProvider } from 'styled-components';
-import { Home } from "./src/screens/Home";
-import { Info } from "./src/screens/Info";
+import { Loading } from "./src/screens/Loading";
+import { Routes } from "./src/routes";
 
 import theme from "./src/theme";
-import { Loading } from "./src/screens/Loading";
-import { Comparison } from "./src/screens/Comparison";
-import { IncomeGraph } from "./src/components/molecules/IncomeGraph";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
-    'Urbanist_200ExtraLight': require('./src/assets/fonts/Urbanist/Urbanist-ExtraLight.ttf'),
-    'Urbanist_400Regular': require('./src/assets/fonts/Urbanist/Urbanist-Regular.ttf'),
-    'Urbanist_500Medium': require('./src/assets/fonts/Urbanist/Urbanist-Medium.ttf'),
-    'Urbanist_600SemiBold': require('./src/assets/fonts/Urbanist/Urbanist-SemiBold.ttf')
+    'Urbanist_200ExtraLight': require('./assets/fonts/Urbanist/Urbanist-ExtraLight.ttf'),
+    'Urbanist_400Regular': require('./assets/fonts/Urbanist/Urbanist-Regular.ttf'),
+    'Urbanist_500Medium': require('./assets/fonts/Urbanist/Urbanist-Medium.ttf'),
+    'Urbanist_600SemiBold': require('./assets/fonts/Urbanist/Urbanist-SemiBold.ttf')
   });
 
   return (
@@ -26,7 +23,7 @@ export default function App() {
         barStyle={'light-content'}
       />
       {
-        !fontsLoaded ? <Loading /> : <Comparison />
+        !fontsLoaded ? <Loading /> : <Routes />
       }
     </ThemeProvider>
   );

@@ -35,5 +35,5 @@ export const IR = [
     { minDays: 0, maxDays: 180, tax: 22.5 },
     { minDays: 181, maxDays: 360, tax: 20 },
     { minDays: 361, maxDays: 720, tax: 17.5 },
-    { minDays: 721, maxDays: 1_000_000, tax: 15 }
+    { minDays: 721, maxDays: 1000000, tax: 15 }
 ];

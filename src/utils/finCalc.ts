@@ -27,7 +27,7 @@ const toMonthlyRate = (rate: number, rateType: string) => {
     return +monthlyRate.toFixed(3);
 }
 
-const toMonths = (period: number, timeUnit: string) => {
+export const toMonths = (period: number, timeUnit: string) => {
     let periodInMonths = 0;
 
     if (timeUnit == 'month') periodInMonths = period;

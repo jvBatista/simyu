@@ -1,6 +1,7 @@
 import styled from "styled-components/native";
 
 export const Container = styled.View`
+    max-width: 85%;
     flex-grow: 1;
     padding-bottom: 4px;
     display: flex;

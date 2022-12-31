@@ -24,7 +24,7 @@ export const InputSection = ({
   type,
   labeledText = '',
   changeUnit = 100,
-  maxValue = 1_000_000,
+  maxValue = 1000000,
   minValue = 0.01,
   includesDecimals = false
 }: InputSectionProps) => {

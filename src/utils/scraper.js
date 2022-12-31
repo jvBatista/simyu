@@ -27,7 +27,7 @@ const scrapeCDI = async () => {
 
     // console.log(taxValue);
 
-    const searchUrl = 'https://www.remessaonline.com.br/blog/cdi-hoje-saiba-como-acompanhar-os-valores-do-indice/';
+    const searchUrl = 'https://www.bcb.gov.br/';
     const response = await fetch(searchUrl);   // fetch page
     // const adress = await data.json();
 

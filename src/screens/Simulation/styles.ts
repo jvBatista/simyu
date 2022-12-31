@@ -1,9 +1,22 @@
-import styled from 'styled-components/native';
+import styled from "styled-components/native";
 
-export const Container = styled.View`
-  width: 100%;
+
+export const RadioContainer = styled.View`
+    width: 100%;
+    flex-direction: row;
+    padding-bottom: 8px;
 `;
 
-export const CustomText = styled.Text`
-  width: 100%;
+export const OptionsInputContainer = styled.View`
+`;
+
+export const CheckboxContainer = styled.View`
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+`;
+
+export const ScrollArea = styled.ScrollView`
+    width: 100%;
+    flex: 1;
 `;
