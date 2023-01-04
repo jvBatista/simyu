@@ -4,9 +4,7 @@ import { Comparison } from '../screens/Comparison';
 import { Info } from '../screens/Info';
 import { Simulation } from '../screens/Simulation';
 
-const {
-    Screen,
-    Navigator } = createBottomTabNavigator();
+const { Screen, Navigator } = createBottomTabNavigator();
 
 export const TabRoutes = () => {
     return (
