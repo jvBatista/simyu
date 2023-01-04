@@ -5,10 +5,16 @@ import { IncomeCompareField } from '../../components/molecules/IncomeCompareFiel
 import { InputSection } from '../../components/organisms/InputSection';
 import { InvestCard } from '../../components/organisms/InvestCard';
 import { SingleColumn } from '../../components/templates/SingleColumn';
+import { RadioButton } from '../../components/molecules/RadioButton';
+import {
+  CardContainer,
+  CenteredRow,
+  OptionsInputContainer,
+  RadioContainer
+} from './styles';
 import { calculateIOFRate, calculateIRRate, calculateIncome } from '../../utils/finCalc';
-import { CardContainer, CenteredRow } from './styles';
-import { handlePeriodLabel } from '../../utils/labels';
-import { SliderInputSection } from '../../components/molecules/SliderInputSection';
+import { handlePeriodLabel, periodLabels } from '../../utils/labels';
+import { CurveChartIcon } from '../../components/atoms/Icons/Icons';
 
 
 export interface InvestProps {
@@ -23,7 +29,8 @@ export interface InvestProps {
 export const Comparison = () => {
   const [initialValue, setInitialValue] = useState(1000);
   const [monthlyAdd, setMonthlyAdd] = useState(100);
-  const [periodInMonths, setPeriodInMonths] = useState(12);
+  const [period, setPeriod] = useState(1);
+  const [timeUnit, setTimeUnit] = useState<'year' | 'month' | 'day'>('year');
   const [counter, setCounter] = useState(0);
   const [investList, setInvestList] = useState<InvestProps[]>([
     {
@@ -36,13 +43,6 @@ export const Comparison = () => {
     }
   ]);
 
-  const months: number[] = [];
-
-  for (let i = 0; i <= 360; i += 1) {
-    if (i < 13) months.push(i); // first 12 months
-    else if (i < 121 && i % 6 == 0) months.push(i); // every 6 months for 10 years
-    else if (i % 12 == 0) months.push(i); // every year for 20 years
-  }
 
   const createNewInvest = () => {
     let newList = investList;
@@ -83,21 +83,17 @@ export const Comparison = () => {
 
   const calculateInvestIncome = (invest: InvestProps) => {
     const incomeData = calculateIncome({
-      period: periodInMonths,
-      timeUnit: 'month',
+      period,
+      timeUnit,
       rateType: invest.rateType,
       initialValue,
       monthlyAdd,
       incomeRate: invest.incomeRate,
-      irRate: invest.applyIR ? calculateIRRate(periodInMonths, 'month') : 0,
-      iofRate: invest.applyIOF ? calculateIOFRate(periodInMonths, 'month') : 0,
+      irRate: invest.applyIR ? calculateIRRate(period, timeUnit) : 0,
+      iofRate: invest.applyIOF ? calculateIOFRate(period, timeUnit) : 0,
     });
 
     return incomeData;
-  }
-
-  const handleMonthSelection = (value: number) => {
-    setPeriodInMonths(months[value]);
   }
 
 
@@ -118,12 +114,38 @@ export const Comparison = () => {
         setValue={setMonthlyAdd}
       />
 
-      <SliderInputSection
-        value={periodInMonths}
-        setValue={handleMonthSelection}
-        maxValue={months.length - 1}
-        label={'ao longo de'}
-      />
+      <OptionsInputContainer>
+        <RadioContainer>
+          <RadioButton
+            label="anos"
+            buttonFunction={() => setTimeUnit('year')}
+            checked={timeUnit == 'year'}
+          />
+          <RadioButton
+            label="meses"
+            buttonFunction={() => setTimeUnit('month')}
+            checked={timeUnit == 'month'}
+          />
+          <RadioButton
+            label="dias"
+            buttonFunction={() => setTimeUnit('day')}
+            checked={timeUnit == 'day'}
+          />
+        </RadioContainer>
+
+        <InputSection
+          type={'labeled'}
+          label={'ao longo de'}
+          labeledText={periodLabels[timeUnit]}
+          changeUnit={1}
+          maxValue={1000}
+          minValue={1}
+          value={period}
+          setValue={setPeriod}
+        />
+      </OptionsInputContainer>
+
+
 
       {investList.length ? investList.map(({ id }, index) => (
         <CardContainer key={id} cardIndex={index}>
@@ -143,7 +165,7 @@ export const Comparison = () => {
       </CenteredRow>
       {investList.length ?
         <IncomeCompareField
-          period={handlePeriodLabel(periodInMonths)}
+          period={handlePeriodLabel(period, timeUnit)}
           investIncomeList={investList.map((item) => {
             const { totalAmount, netIncome } = calculateInvestIncome(item);
 

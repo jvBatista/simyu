@@ -41,7 +41,7 @@ export const IncomeField = ({
 
 
       <HeaderContainer>
-        <RegularText size='giant' weight='semibold'>{formatter.format(totalValue)}</RegularText>
+        <RegularText size='giant' weight='semibold' spaced>{formatter.format(totalValue)}</RegularText>
       </HeaderContainer>
 
 

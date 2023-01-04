@@ -17,13 +17,20 @@ export const IRLabels = [
     "Acima de 720 dias (+ 2 anos)"
 ];
 
-export const handlePeriodLabel = (period: number, timeUnit='month') => {
+export const handlePeriodLabel = (period: number, timeUnit: string) => {
     if (timeUnit == 'day') {
         let dayText;
         if (period == 1) dayText = 'dia';
         else dayText = 'dias';
-    
+
         return `${period} ${dayText}`;
+    } else if (timeUnit == 'year') {
+        let text;
+
+        if (period == 1) text = 'ano';
+        else text = 'anos';
+
+        return `${period} ${text}`;
     }
 
     const years = Math.floor(period / 12);

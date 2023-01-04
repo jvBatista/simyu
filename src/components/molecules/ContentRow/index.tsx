@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ArrowDown } from '../../atoms/Icons/Icons';
 import { RegularText } from '../../atoms/RegularText';
 import {
-  Button,
+  IconContainer,
   Container,
   Content,
   Row
@@ -18,12 +18,12 @@ export const ContentRow = ({ title, children }: ContentRowProps) => {
 
   return (
     <Container>
-      <Row>
+      <Row onPress={() => setOpened(!opened)}>
         <RegularText size='larger'>{title}</RegularText>
 
-        <Button onPress={() => setOpened(!opened)} opened={opened}>
+        <IconContainer opened={opened}>
           <ArrowDown />
-        </Button>
+        </IconContainer>
       </Row>
 
       <Content opened={opened}>

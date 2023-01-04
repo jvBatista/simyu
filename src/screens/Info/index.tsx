@@ -23,7 +23,7 @@ export const Info = () => {
 
       <ContentRow title={'CDI'}>
         <Row>
-          <RegularText size='giant' variant='cyan' weight='semibold'>
+          <RegularText size='giant' variant='cyan' weight='semibold' spaced>
             13.65%
           </RegularText>
           <RegularText weight='medium'>

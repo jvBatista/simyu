@@ -10,7 +10,7 @@ export const Container = styled.View`
   border-color: ${({ theme }) => theme.colors.white};
 `;
 
-export const Row = styled.View`
+export const Row = styled.TouchableOpacity`
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -29,7 +29,7 @@ export const Content = styled.View<RowContent>`
   display: ${({ opened }) => opened ? 'flex' : 'none'};
 `;
 
-export const Button = styled.TouchableOpacity<RowContent>`
+export const IconContainer = styled.View<RowContent>`
   display: flex;
   align-items: center;
   justify-content: center;

@@ -33,7 +33,7 @@ export const RegularText = ({
       size={fontSizes[size]}
       variant={variant}
       weight={weight}
-      spaced
+      spaced={spaced}
       numberOfLines={numberOfLines}
     >
       {children}

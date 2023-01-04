@@ -12,4 +12,5 @@ export const Text = styled.Text<TextVariants>`
   font-family: ${({ theme, weight }) => theme.fonts[weight]};
   font-size: ${({ size }) => size.size};
   line-height: ${({ size }) => size.height};
+  letter-spacing: ${({ spaced }) => spaced ? '1px' : '0px'};
 `;

@@ -75,12 +75,14 @@ export const Simulation = () => {
                 type={'currency'}
                 label={'valor inicial'}
                 value={initialValue}
-                setValue={setInitialValue} />
+                setValue={setInitialValue}
+            />
             <InputSection
                 type={'currency'}
                 label={'depositando todo mês'}
                 value={monthlyAdd}
-                setValue={setMonthlyAdd} />
+                setValue={setMonthlyAdd}
+            />
 
             <OptionsInputContainer>
                 <RadioContainer>
@@ -118,15 +120,18 @@ export const Simulation = () => {
                     <RadioButton
                         label="anos"
                         buttonFunction={() => setTimeUnit('year')}
-                        checked={timeUnit == 'year'} />
+                        checked={timeUnit == 'year'}
+                    />
                     <RadioButton
                         label="meses"
                         buttonFunction={() => setTimeUnit('month')}
-                        checked={timeUnit == 'month'} />
+                        checked={timeUnit == 'month'}
+                    />
                     <RadioButton
                         label="dias"
                         buttonFunction={() => setTimeUnit('day')}
-                        checked={timeUnit == 'day'} />
+                        checked={timeUnit == 'day'}
+                    />
                 </RadioContainer>
 
                 <InputSection
@@ -137,7 +142,8 @@ export const Simulation = () => {
                     maxValue={1000}
                     minValue={1}
                     value={period}
-                    setValue={setPeriod} />
+                    setValue={setPeriod}
+                />
             </OptionsInputContainer>
 
             <CheckboxContainer>

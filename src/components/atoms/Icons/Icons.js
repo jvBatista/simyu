@@ -170,3 +170,17 @@ export const TrashIcon = ({ red = false }) => (
     </G>
   </Svg>
 )
+
+export const CurveChartIcon = ({ id }) => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={24}
+    height={24}
+    viewBox="0 0 24 24"
+  >
+    <Path
+      d="M20.999 6.004a2.984 2.984 0 00-1.293.293l-2-2a3 3 0 10-4.686.96l-3.9 9.753h-.122a2.99 2.99 0 00-.9.138l-2.607-3.48a3 3 0 10-1.6 1.2l2.607 3.476a3 3 0 104.476-.591L14.874 6h.122a2.984 2.984 0 001.293-.293l2 2A3 3 0 1020.997 6z"
+      fill={id % 2 == 0 ? theme.colors.cyan : theme.colors.orange}
+    />
+  </Svg>
+)
