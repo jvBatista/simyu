@@ -19,7 +19,7 @@ export const LabeledInput = ({
   const handleTextChange = (text: string) => {
     if (includesDecimals) {
       if (text.length < 6) {
-        if (!text) setValue(1);
+        if (!text) setValue(0);
         else {
           if (text.includes('.')) {
             text = text.replace('.', '');

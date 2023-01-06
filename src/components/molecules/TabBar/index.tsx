@@ -45,7 +45,7 @@ export const TabBar = ({ state, descriptors, navigation }: any) => {
           };
 
           return (
-            <Container isFocused={isFocused}>
+            <Container isFocused={isFocused} key={route.key}>
               <TouchableOpacity
                 accessibilityRole="button"
                 accessibilityState={isFocused ? { selected: true } : {}}

@@ -25,7 +25,7 @@ export const InputSection = ({
   labeledText = '',
   changeUnit = 100,
   maxValue = 1000000,
-  minValue = 0.01,
+  minValue = 0,
   includesDecimals = false
 }: InputSectionProps) => {
   const increaseValue = () => {
