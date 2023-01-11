@@ -5,16 +5,14 @@ import { IncomeCompareField } from '../../components/molecules/IncomeCompareFiel
 import { InputSection } from '../../components/organisms/InputSection';
 import { InvestCard } from '../../components/organisms/InvestCard';
 import { SingleColumn } from '../../components/templates/SingleColumn';
-import { RadioButton } from '../../components/molecules/RadioButton';
+import { OptionsRow } from '../../components/organisms/OptionsRow';
 import {
   CardContainer,
   CenteredRow,
-  OptionsInputContainer,
-  RadioContainer
+  OptionsInputContainer  
 } from './styles';
 import { calculateIOFRate, calculateIRRate, calculateIncome } from '../../utils/finCalc';
 import { handlePeriodLabel, periodLabels } from '../../utils/labels';
-import { CurveChartIcon } from '../../components/atoms/Icons/Icons';
 
 
 export interface InvestProps {
@@ -96,6 +94,12 @@ export const Comparison = () => {
     return incomeData;
   }
 
+  const timePeriods = [
+    { label: 'anos', value: 'year' },
+    { label: 'meses', value: 'month' },
+    { label: 'dias', value: 'day' },
+  ];
+
 
   return (
     <SingleColumn>
@@ -104,34 +108,20 @@ export const Comparison = () => {
       <InputSection
         type={'currency'}
         label={'valor inicial'}
-        value={initialValue}
-        setValue={setInitialValue}
+        defaultValue={initialValue}
+        updateValue={setInitialValue}
       />
       <InputSection
         type={'currency'}
         label={'depositando todo mês'}
-        value={monthlyAdd}
-        setValue={setMonthlyAdd}
+        defaultValue={monthlyAdd}
+        updateValue={setMonthlyAdd}
       />
 
       <OptionsInputContainer>
-        <RadioContainer>
-          <RadioButton
-            label="anos"
-            buttonFunction={() => setTimeUnit('year')}
-            checked={timeUnit == 'year'}
-          />
-          <RadioButton
-            label="meses"
-            buttonFunction={() => setTimeUnit('month')}
-            checked={timeUnit == 'month'}
-          />
-          <RadioButton
-            label="dias"
-            buttonFunction={() => setTimeUnit('day')}
-            checked={timeUnit == 'day'}
-          />
-        </RadioContainer>
+        <OptionsRow options={timePeriods} updateValue={(value) => {
+          if (value == 'year' || value == 'month' || value == 'day') setTimeUnit(value)
+        }} />
 
         <InputSection
           type={'labeled'}
@@ -140,8 +130,8 @@ export const Comparison = () => {
           changeUnit={1}
           maxValue={1000}
           minValue={1}
-          value={period}
-          setValue={setPeriod}
+          defaultValue={period}
+          updateValue={setPeriod}
         />
       </OptionsInputContainer>
 
@@ -163,6 +153,7 @@ export const Comparison = () => {
       <CenteredRow>
         <CircleButton buttonFunction={createNewInvest} />
       </CenteredRow>
+
       {investList.length ?
         <IncomeCompareField
           period={handlePeriodLabel(period, timeUnit)}

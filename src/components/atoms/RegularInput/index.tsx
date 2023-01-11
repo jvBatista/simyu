@@ -1,21 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Input } from './styles';
 
 interface InputProps {
-  value: string,
-  setValue: (value: string) => void,
+  defaultValue: string,
+  updateValue: (value: string) => void,
 }
 
 export const RegularInput = ({
-  value,
-  setValue,
+  defaultValue,
+  updateValue,
 }: InputProps) => {
+  const [value, setValue] = useState(defaultValue);
 
   return (
     <Container>
       <Input
         value={value}
         onChangeText={setValue}
+        onBlur={() => updateValue(value)}
       />
     </Container >
   );

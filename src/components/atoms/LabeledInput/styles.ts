@@ -18,4 +18,5 @@ export const Input = styled.TextInput`
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-right: 8px;
 `;

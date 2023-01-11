@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { CircleButton } from '../../atoms/CircleButton';
 import { CurrencyInput } from '../../atoms/CurrencyInput';
 import { LabeledInput } from '../../atoms/LabeledInput';
@@ -7,8 +7,8 @@ import { ButtonContainer, ButtonsContainer, Container, InputRow } from './styles
 
 interface InputSectionProps {
   label: string,
-  value: number,
-  setValue: (value: number) => void,
+  defaultValue: number,
+  updateValue: (value: number) => void,
   type: 'currency' | 'labeled',
   labeledText?: string,
   changeUnit?: number,
@@ -19,8 +19,8 @@ interface InputSectionProps {
 
 export const InputSection = ({
   label,
-  value,
-  setValue,
+  defaultValue,
+  updateValue,
   type,
   labeledText = '',
   changeUnit = 100,
@@ -28,12 +28,16 @@ export const InputSection = ({
   minValue = 0,
   includesDecimals = false
 }: InputSectionProps) => {
+  const [value, setValue] = useState(defaultValue);
+  
   const increaseValue = () => {
     if (value < maxValue) {
       if (value + changeUnit < maxValue) setValue(value + changeUnit);
       else setValue(maxValue);
     }
     else setValue(maxValue);
+
+    updateValue(value);
   };
 
   const decreaseValue = () => {
@@ -42,6 +46,8 @@ export const InputSection = ({
       else setValue(minValue);
     }
     else setValue(minValue);
+
+    updateValue(value);
   };
 
   return (

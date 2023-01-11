@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Title } from '../../components/atoms/Title';
 import { Checkbox } from '../../components/molecules/Checkbox';
-import { RadioButton } from '../../components/molecules/RadioButton';
 import { IncomeField } from '../../components/molecules/IncomeField';
 import { InputSection } from '../../components/organisms/InputSection';
 import { SingleColumn } from '../../components/templates/SingleColumn';
@@ -9,14 +8,13 @@ import { handlePeriodLabel, periodLabels, taxLabels } from '../../utils/labels';
 import {
     calculateIOFRate,
     calculateIRRate,
-    calculateIncome,
-    toMonths
+    calculateIncome
 } from '../../utils/finCalc';
 import {
     CheckboxContainer,
-    OptionsInputContainer,
-    RadioContainer
+    OptionsInputContainer
 } from './styles';
+import { OptionsRow } from '../../components/organisms/OptionsRow';
 
 export const Simulation = () => {
     const [initialValue, setInitialValue] = useState(1000);
@@ -66,6 +64,18 @@ export const Simulation = () => {
         applyIR
     ]);
 
+    const rateTypes = [
+        { label: 'CDI', value: 'cdi' },
+        { label: '% a.a', value: 'aa' },
+        { label: '% a.m', value: 'am' },
+    ];
+
+    const timePeriods = [
+        { label: 'anos', value: 'year' },
+        { label: 'meses', value: 'month' },
+        { label: 'dias', value: 'day' },
+    ];
+
 
     return (
         <SingleColumn>
@@ -74,34 +84,21 @@ export const Simulation = () => {
             <InputSection
                 type={'currency'}
                 label={'valor inicial'}
-                value={initialValue}
-                setValue={setInitialValue}
+                defaultValue={initialValue}
+                updateValue={setInitialValue}
             />
             <InputSection
                 type={'currency'}
                 label={'depositando todo mês'}
-                value={monthlyAdd}
-                setValue={setMonthlyAdd}
+                defaultValue={monthlyAdd}
+                updateValue={setMonthlyAdd}
             />
 
             <OptionsInputContainer>
-                <RadioContainer>
-                    <RadioButton
-                        label="CDI"
-                        buttonFunction={() => setRateType('cdi')}
-                        checked={rateType == 'cdi'}
-                    />
-                    <RadioButton
-                        label="% a.a"
-                        buttonFunction={() => setRateType('aa')}
-                        checked={rateType == 'aa'}
-                    />
-                    <RadioButton
-                        label="% a.m"
-                        buttonFunction={() => setRateType('am')}
-                        checked={rateType == 'am'}
-                    />
-                </RadioContainer>
+                <OptionsRow options={rateTypes} updateValue={(value) => {
+                    if (value == 'cdi' || value == 'aa' || value == 'am') setRateType(value)
+                }}
+                />
 
                 <InputSection
                     type={'labeled'}
@@ -109,30 +106,16 @@ export const Simulation = () => {
                     labeledText={taxLabels[rateType]}
                     changeUnit={1}
                     maxValue={1000}
-                    value={incomeRate}
-                    setValue={setIncomeRate}
+                    defaultValue={incomeRate}
+                    updateValue={setIncomeRate}
                     includesDecimals
                 />
             </OptionsInputContainer>
 
             <OptionsInputContainer>
-                <RadioContainer>
-                    <RadioButton
-                        label="anos"
-                        buttonFunction={() => setTimeUnit('year')}
-                        checked={timeUnit == 'year'}
-                    />
-                    <RadioButton
-                        label="meses"
-                        buttonFunction={() => setTimeUnit('month')}
-                        checked={timeUnit == 'month'}
-                    />
-                    <RadioButton
-                        label="dias"
-                        buttonFunction={() => setTimeUnit('day')}
-                        checked={timeUnit == 'day'}
-                    />
-                </RadioContainer>
+                <OptionsRow options={timePeriods} updateValue={(value) => {
+                    if (value == 'year' || value == 'month' || value == 'day') setTimeUnit(value)
+                }} />
 
                 <InputSection
                     type={'labeled'}
@@ -141,21 +124,21 @@ export const Simulation = () => {
                     changeUnit={1}
                     maxValue={1000}
                     minValue={1}
-                    value={period}
-                    setValue={setPeriod}
+                    defaultValue={period}
+                    updateValue={setPeriod}
                 />
             </OptionsInputContainer>
 
             <CheckboxContainer>
                 <Checkbox
-                    checked={applyIR}
+                    defaultValue={applyIR}
                     label={'aplicar imposto de renda'}
-                    buttonFunction={() => setApplyIR(!applyIR)}
+                    updateValue={setApplyIR}
                 />
                 <Checkbox
-                    checked={applyIOF}
+                    defaultValue={applyIOF}
                     label={'aplicar IOF'}
-                    buttonFunction={() => setApplyIOF(!applyIOF)}
+                    updateValue={setApplyIOF}
                 />
             </CheckboxContainer>
 

@@ -5,8 +5,8 @@ import { ArrowDown, InvestIcon, TrashIcon } from '../../atoms/Icons/Icons';
 import { RegularInput } from '../../atoms/RegularInput';
 import { RegularText } from '../../atoms/RegularText';
 import { Checkbox } from '../../molecules/Checkbox';
-import { RadioButton } from '../../molecules/RadioButton';
 import { InputSection } from '../InputSection';
+import { OptionsRow } from '../OptionsRow';
 import {
   ArrowButton,
   Button,
@@ -15,7 +15,6 @@ import {
   Container,
   DetailsContainer,
   OptionsInputContainer,
-  RadioContainer,
   Row,
 } from './styles';
 
@@ -36,7 +35,7 @@ export const InvestCard = ({
   monthlyAdd,
   index
 }: InvestCardProps) => {
-  const [name, setName] = useState(`Investimento ${index+1}`);
+  const [name, setName] = useState(`Investimento ${index + 1}`);
   const [incomeRate, setIncomeRate] = useState(100);
   const [rateType, setRateType] = useState<'cdi' | 'aa' | 'am'>('cdi');
   const [applyIR, setApplyIR] = useState(true);
@@ -62,13 +61,19 @@ export const InvestCard = ({
     monthlyAdd
   ]);
 
+  const rateTypes = [
+    { label: 'CDI', value: 'cdi' },
+    { label: '% a.a', value: 'aa' },
+    { label: '% a.m', value: 'am' },
+  ];
+
 
   return (
     <Container>
       {
         opened ? (
           <Row>
-            <RegularInput value={name} setValue={setName} />
+            <RegularInput defaultValue={name} updateValue={setName} />
 
             <Button onPress={() => deleteInvest(id)} style={{ paddingLeft: 24 }}>
               <TrashIcon red />
@@ -93,20 +98,10 @@ export const InvestCard = ({
       {opened &&
         <DetailsContainer>
           <OptionsInputContainer>
-            <RadioContainer>
-              <RadioButton
-                label="CDI"
-                buttonFunction={() => setRateType('cdi')}
-                checked={rateType == 'cdi'} />
-              <RadioButton
-                label="% a.a"
-                buttonFunction={() => setRateType('aa')}
-                checked={rateType == 'aa'} />
-              <RadioButton
-                label="% a.m"
-                buttonFunction={() => setRateType('am')}
-                checked={rateType == 'am'} />
-            </RadioContainer>
+            <OptionsRow options={rateTypes} updateValue={(value) => {
+              if (value == 'cdi' || value == 'aa' || value == 'am') setRateType(value)
+            }}
+            />
 
             <InputSection
               type={'labeled'}
@@ -114,21 +109,19 @@ export const InvestCard = ({
               labeledText={taxLabels[rateType]}
               changeUnit={1}
               maxValue={1000}
-              value={incomeRate}
-              setValue={setIncomeRate}
+              defaultValue={incomeRate}
+              updateValue={setIncomeRate}
               includesDecimals
             />
           </OptionsInputContainer>
 
           <CheckboxContainer>
             <Checkbox
-              checked={applyIR}
               label={'aplicar imposto de renda'}
-              buttonFunction={() => setApplyIR(!applyIR)} />
+              updateValue={setApplyIR} />
             <Checkbox
-              checked={applyIOF}
               label={'aplicar IOF'}
-              buttonFunction={() => setApplyIOF(!applyIOF)} />
+              updateValue={setApplyIOF} />
           </CheckboxContainer>
         </DetailsContainer>
       }

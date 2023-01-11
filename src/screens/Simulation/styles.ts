@@ -1,12 +1,6 @@
 import styled from "styled-components/native";
 
 
-export const RadioContainer = styled.View`
-    width: 100%;
-    flex-direction: row;
-    padding-bottom: 8px;
-`;
-
 export const OptionsInputContainer = styled.View`
 `;
 

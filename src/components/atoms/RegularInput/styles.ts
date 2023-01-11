@@ -13,6 +13,7 @@ export const Container = styled.View`
 `;
 
 export const Input = styled.TextInput`
+    flex-grow: 1;
     color: white;
     font-family: ${({ theme }) => theme.fonts.medium};
     font-size: 20px;

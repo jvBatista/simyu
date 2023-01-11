@@ -5,16 +5,21 @@ import {
 } from './styles';
 
 interface CircleButtonProps {
+  variant?: "default" | "secondary",
   buttonFunction: VoidFunction,
-  variant?: "default" | "secondary";
 }
 
 export const CircleButton = ({
-  buttonFunction,
-  variant='default'
+  variant = 'default',
+  buttonFunction
 }: CircleButtonProps) => {
   return (
-    <Container variant={variant} onPress={buttonFunction}>
+    <Container
+      variant={variant}
+      onPress={buttonFunction}
+      delayPressOut={0}
+
+    >
       <ButtonText variant={variant}>{variant == 'default' ? '+' : '-'}</ButtonText>
     </Container >
   );
