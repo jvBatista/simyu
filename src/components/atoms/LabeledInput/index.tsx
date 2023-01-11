@@ -6,6 +6,7 @@ interface InputProps {
   label: string,
   value: number,
   setValue: (value: number) => void,
+  updateValue: (value: number) => void,
   includesDecimals?: boolean
 }
 
@@ -13,6 +14,7 @@ export const LabeledInput = ({
   label,
   value,
   setValue,
+  updateValue,
   includesDecimals = false
 }: InputProps) => {
 
@@ -45,6 +47,7 @@ export const LabeledInput = ({
         value={value.toString()}
         onChangeText={handleTextChange}
         keyboardType='numeric'
+        onBlur={() => updateValue(value)}
       />
       <RegularText size='larger' weight='medium'>{label}</RegularText>
     </Container >

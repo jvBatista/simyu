@@ -4,12 +4,14 @@ import { Container, Input } from './styles';
 
 interface InputProps {
   value: number,
-  setValue: (value: number) => void
+  setValue: (value: number) => void,
+  updateValue: (value: number) => void
 }
 
 export const CurrencyInput = ({
   value,
-  setValue
+  setValue,
+  updateValue
 }: InputProps) => {
 
   const handleTextChange = (text: string) => {
@@ -30,6 +32,7 @@ export const CurrencyInput = ({
         value={formatter.format(value).trim()}
         onChangeText={handleTextChange}
         keyboardType='numeric'
+        onBlur={() => updateValue(value)}
       />
     </Container >
   );

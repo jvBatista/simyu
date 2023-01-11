@@ -29,25 +29,29 @@ export const InputSection = ({
   includesDecimals = false
 }: InputSectionProps) => {
   const [value, setValue] = useState(defaultValue);
-  
-  const increaseValue = () => {
-    if (value < maxValue) {
-      if (value + changeUnit < maxValue) setValue(value + changeUnit);
-      else setValue(maxValue);
-    }
-    else setValue(maxValue);
 
-    updateValue(value);
+  const increaseValue = () => {
+    let newValue;
+    if (value < maxValue) {
+      if (value + changeUnit < maxValue) newValue = value + changeUnit;
+      else newValue = maxValue;
+    }
+    else newValue = maxValue;
+
+    setValue(newValue);
+    updateValue(newValue);
   };
 
   const decreaseValue = () => {
+    let newValue;
     if (value > minValue) {
-      if (value - changeUnit > minValue) setValue(value - changeUnit);
-      else setValue(minValue);
+      if (value - changeUnit > minValue) newValue = value - changeUnit;
+      else newValue = minValue;
     }
-    else setValue(minValue);
+    else newValue = minValue;
 
-    updateValue(value);
+    setValue(newValue);
+    updateValue(newValue);
   };
 
   return (
@@ -55,13 +59,21 @@ export const InputSection = ({
       <RegularText variant='cyan' size='smaller'>{label}</RegularText>
 
       <InputRow>
-        {type == 'currency' && <CurrencyInput value={value} setValue={setValue} />}
+        {
+          type == 'currency' &&
+          <CurrencyInput
+            value={value}
+            setValue={setValue}
+            updateValue={updateValue}
+          />
+        }
         {
           type == 'labeled' &&
           <LabeledInput
             value={value}
             setValue={setValue}
             label={labeledText}
+            updateValue={updateValue}
             includesDecimals={includesDecimals}
           />
         }
