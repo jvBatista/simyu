@@ -1,7 +1,7 @@
 import React from 'react';
+import { AddIcon, RemoveIcon } from '../Icons/Icons';
 import {
-  Container,
-  ButtonText
+  Container
 } from './styles';
 
 interface CircleButtonProps {
@@ -20,7 +20,7 @@ export const CircleButton = ({
       delayPressOut={0}
 
     >
-      <ButtonText variant={variant}>{variant == 'default' ? '+' : '-'}</ButtonText>
+      {variant == 'default' ? <AddIcon /> : <RemoveIcon />}
     </Container >
   );
 };

@@ -184,3 +184,60 @@ export const CurveChartIcon = ({ id }) => (
     />
   </Svg>
 )
+
+export const AddIcon = () => (
+  <Svg
+    width={24}
+    height={24}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <Mask
+      id="a"
+      style={{
+        maskType: "alpha"
+      }}
+      maskUnits="userSpaceOnUse"
+      x={0}
+      y={0}
+      width={24}
+      height={24}
+    >
+      <Path fill="#D9D9D9" d="M0 0H24V24H0z" />
+    </Mask>
+    <G mask="url(#a)">
+      <Path
+        d="M11.25 18.75v-6h-6v-1.5h6v-6h1.5v6h6v1.5h-6v6h-1.5z"
+        fill={theme.colors.ayu_900}
+      />
+    </G>
+  </Svg>
+)
+
+export const RemoveIcon = () => (
+  <Svg
+    width={24}
+    height={24}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <Mask
+      id="a"
+      style={{
+        maskType: "alpha"
+      }}
+      maskUnits="userSpaceOnUse"
+      x={0}
+      y={0}
+      width={24}
+      height={24}
+    >
+      <Path fill="#D9D9D9" d="M0 0H24V24H0z" />
+    </Mask>
+    <G mask="url(#a)">
+      <Path d="M5.25 12.75v-1.5h13.5v1.5H5.25z" fill={theme.colors.white} />
+    </G>
+  </Svg>
+)
