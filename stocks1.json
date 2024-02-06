@@ -1,0 +1,2227 @@
+[
+    {
+        "ticker": "ABEV3",
+        "stock_id": "64",
+        "company_id": "34"
+    },
+    {
+        "ticker": "AESB3",
+        "stock_id": "602",
+        "company_id": "510"
+    },
+    {
+        "ticker": "AERI3",
+        "stock_id": "532",
+        "company_id": "404"
+    },
+    {
+        "ticker": "AALR3",
+        "stock_id": "243",
+        "company_id": "172"
+    },
+    {
+        "ticker": "ADHM3",
+        "stock_id": "432",
+        "company_id": "331"
+    },
+    {
+        "ticker": "ABCB4",
+        "stock_id": "100",
+        "company_id": "74"
+    },
+    {
+        "ticker": "AFLT3",
+        "stock_id": "254",
+        "company_id": "170"
+    },
+    {
+        "ticker": "AGRO3",
+        "stock_id": "320",
+        "company_id": "231"
+    },
+    {
+        "ticker": "AHEB3",
+        "stock_id": "495",
+        "company_id": "372"
+    },
+    {
+        "ticker": "AHEB6",
+        "stock_id": "497",
+        "company_id": "372"
+    },
+    {
+        "ticker": "AHEB5",
+        "stock_id": "496",
+        "company_id": "372"
+    },
+    {
+        "ticker": "ALLD3",
+        "stock_id": "584",
+        "company_id": "277"
+    },
+    {
+        "ticker": "ALPA3",
+        "stock_id": "226",
+        "company_id": "167"
+    },
+    {
+        "ticker": "ALPK3",
+        "stock_id": "353",
+        "company_id": "256"
+    },
+    {
+        "ticker": "ALPA4",
+        "stock_id": "227",
+        "company_id": "167"
+    },
+    {
+        "ticker": "ALSO3",
+        "stock_id": "252",
+        "company_id": "171"
+    },
+    {
+        "ticker": "ALUP11",
+        "stock_id": "28",
+        "company_id": "28"
+    },
+    {
+        "ticker": "AMAR3",
+        "stock_id": "175",
+        "company_id": "130"
+    },
+    {
+        "ticker": "ALUP4",
+        "stock_id": "27",
+        "company_id": "28"
+    },
+    {
+        "ticker": "ALUP3",
+        "stock_id": "26",
+        "company_id": "28"
+    },
+    {
+        "ticker": "AMBP3",
+        "stock_id": "352",
+        "company_id": "254"
+    },
+    {
+        "ticker": "APTI4",
+        "stock_id": "499",
+        "company_id": "373"
+    },
+    {
+        "ticker": "ANIM3",
+        "stock_id": "89",
+        "company_id": "70"
+    },
+    {
+        "ticker": "AMER3",
+        "stock_id": "622",
+        "company_id": "520"
+    },
+    {
+        "ticker": "APER3",
+        "stock_id": "253",
+        "company_id": "173"
+    },
+    {
+        "ticker": "ARML3",
+        "stock_id": "621",
+        "company_id": "496"
+    },
+    {
+        "ticker": "ARZZ3",
+        "stock_id": "101",
+        "company_id": "75"
+    },
+    {
+        "ticker": "ASAI3",
+        "stock_id": "626",
+        "company_id": "530"
+    },
+    {
+        "ticker": "AVLL3",
+        "stock_id": "529",
+        "company_id": "266"
+    },
+    {
+        "ticker": "ATMP3",
+        "stock_id": "510",
+        "company_id": "379"
+    },
+    {
+        "ticker": "ATOM3",
+        "stock_id": "433",
+        "company_id": "332"
+    },
+    {
+        "ticker": "AURA33",
+        "stock_id": "608",
+        "company_id": "515"
+    },
+    {
+        "ticker": "AZEV3",
+        "stock_id": "434",
+        "company_id": "333"
+    },
+    {
+        "ticker": "AZUL4",
+        "stock_id": "91",
+        "company_id": "72"
+    },
+    {
+        "ticker": "AURE3",
+        "stock_id": "637",
+        "company_id": "560"
+    },
+    {
+        "ticker": "AZEV4",
+        "stock_id": "435",
+        "company_id": "333"
+    },
+    {
+        "ticker": "BAHI3",
+        "stock_id": "250",
+        "company_id": "175"
+    },
+    {
+        "ticker": "B3SA3",
+        "stock_id": "66",
+        "company_id": "52"
+    },
+    {
+        "ticker": "BALM3",
+        "stock_id": "229",
+        "company_id": "184"
+    },
+    {
+        "ticker": "BBRK3",
+        "stock_id": "256",
+        "company_id": "190"
+    },
+    {
+        "ticker": "BALM4",
+        "stock_id": "228",
+        "company_id": "184"
+    },
+    {
+        "ticker": "BAUH4",
+        "stock_id": "290",
+        "company_id": "210"
+    },
+    {
+        "ticker": "BAZA3",
+        "stock_id": "240",
+        "company_id": "177"
+    },
+    {
+        "ticker": "BBAS3",
+        "stock_id": "42",
+        "company_id": "35"
+    },
+    {
+        "ticker": "BBDC3",
+        "stock_id": "39",
+        "company_id": "32"
+    },
+    {
+        "ticker": "BBDC4",
+        "stock_id": "40",
+        "company_id": "32"
+    },
+    {
+        "ticker": "BBSE3",
+        "stock_id": "308",
+        "company_id": "218"
+    },
+    {
+        "ticker": "BDLL4",
+        "stock_id": "87",
+        "company_id": "67"
+    },
+    {
+        "ticker": "BDLL3",
+        "stock_id": "546",
+        "company_id": "67"
+    },
+    {
+        "ticker": "BEEF3",
+        "stock_id": "52",
+        "company_id": "46"
+    },
+    {
+        "ticker": "BEES3",
+        "stock_id": "238",
+        "company_id": "179"
+    },
+    {
+        "ticker": "BEES4",
+        "stock_id": "239",
+        "company_id": "179"
+    },
+    {
+        "ticker": "BGIP3",
+        "stock_id": "241",
+        "company_id": "178"
+    },
+    {
+        "ticker": "BIOM3",
+        "stock_id": "221",
+        "company_id": "185"
+    },
+    {
+        "ticker": "BIDI11",
+        "stock_id": "62",
+        "company_id": "26"
+    },
+    {
+        "ticker": "BIDI4",
+        "stock_id": "61",
+        "company_id": "26"
+    },
+    {
+        "ticker": "BIDI3",
+        "stock_id": "60",
+        "company_id": "26"
+    },
+    {
+        "ticker": "BGIP4",
+        "stock_id": "242",
+        "company_id": "178"
+    },
+    {
+        "ticker": "BLUT4",
+        "stock_id": "478",
+        "company_id": "360"
+    },
+    {
+        "ticker": "BLUT3",
+        "stock_id": "477",
+        "company_id": "360"
+    },
+    {
+        "ticker": "BMEB4",
+        "stock_id": "234",
+        "company_id": "182"
+    },
+    {
+        "ticker": "BMEB3",
+        "stock_id": "233",
+        "company_id": "182"
+    },
+    {
+        "ticker": "BLAU3",
+        "stock_id": "585",
+        "company_id": "462"
+    },
+    {
+        "ticker": "BMIN3",
+        "stock_id": "347",
+        "company_id": "251"
+    },
+    {
+        "ticker": "BMKS3",
+        "stock_id": "115",
+        "company_id": "85"
+    },
+    {
+        "ticker": "BMOB3",
+        "stock_id": "572",
+        "company_id": "439"
+    },
+    {
+        "ticker": "BMGB4",
+        "stock_id": "103",
+        "company_id": "77"
+    },
+    {
+        "ticker": "BMIN4",
+        "stock_id": "348",
+        "company_id": "251"
+    },
+    {
+        "ticker": "BNBR3",
+        "stock_id": "232",
+        "company_id": "183"
+    },
+    {
+        "ticker": "BOAS3",
+        "stock_id": "555",
+        "company_id": "282"
+    },
+    {
+        "ticker": "BPAN4",
+        "stock_id": "82",
+        "company_id": "65"
+    },
+    {
+        "ticker": "BOBR4",
+        "stock_id": "365",
+        "company_id": "294"
+    },
+    {
+        "ticker": "BPAC11",
+        "stock_id": "104",
+        "company_id": "78"
+    },
+    {
+        "ticker": "BPAC5",
+        "stock_id": "106",
+        "company_id": "78"
+    },
+    {
+        "ticker": "BOBR3",
+        "stock_id": "364",
+        "company_id": "294"
+    },
+    {
+        "ticker": "BPAC3",
+        "stock_id": "105",
+        "company_id": "78"
+    },
+    {
+        "ticker": "BPAR3",
+        "stock_id": "235",
+        "company_id": "180"
+    },
+    {
+        "ticker": "BPHA3",
+        "stock_id": "534",
+        "company_id": ""
+    },
+    {
+        "ticker": "BRGE11",
+        "stock_id": "337",
+        "company_id": "246"
+    },
+    {
+        "ticker": "BRAP3",
+        "stock_id": "116",
+        "company_id": "86"
+    },
+    {
+        "ticker": "BRBI11",
+        "stock_id": "614",
+        "company_id": "271"
+    },
+    {
+        "ticker": "BRFS3",
+        "stock_id": "65",
+        "company_id": "51"
+    },
+    {
+        "ticker": "BRAP4",
+        "stock_id": "117",
+        "company_id": "86"
+    },
+    {
+        "ticker": "BRGE6",
+        "stock_id": "342",
+        "company_id": "246"
+    },
+    {
+        "ticker": "BRGE12",
+        "stock_id": "653",
+        "company_id": "246"
+    },
+    {
+        "ticker": "BRGE3",
+        "stock_id": "339",
+        "company_id": "246"
+    },
+    {
+        "ticker": "BRGE7",
+        "stock_id": "341",
+        "company_id": "246"
+    },
+    {
+        "ticker": "BRGE8",
+        "stock_id": "338",
+        "company_id": "246"
+    },
+    {
+        "ticker": "BRGE5",
+        "stock_id": "340",
+        "company_id": "246"
+    },
+    {
+        "ticker": "BRIT3",
+        "stock_id": "619",
+        "company_id": "502"
+    },
+    {
+        "ticker": "BRSR3",
+        "stock_id": "107",
+        "company_id": "79"
+    },
+    {
+        "ticker": "BRPR3",
+        "stock_id": "258",
+        "company_id": ""
+    },
+    {
+        "ticker": "BRSR5",
+        "stock_id": "108",
+        "company_id": "79"
+    },
+    {
+        "ticker": "BRSR6",
+        "stock_id": "109",
+        "company_id": "79"
+    },
+    {
+        "ticker": "BSLI4",
+        "stock_id": "437",
+        "company_id": "334"
+    },
+    {
+        "ticker": "BTOW3",
+        "stock_id": "113",
+        "company_id": "83"
+    },
+    {
+        "ticker": "BSEV3",
+        "stock_id": "255",
+        "company_id": "189"
+    },
+    {
+        "ticker": "BSLI3",
+        "stock_id": "436",
+        "company_id": ""
+    },
+    {
+        "ticker": "CALI4",
+        "stock_id": "454",
+        "company_id": "345"
+    },
+    {
+        "ticker": "CALI3",
+        "stock_id": "453",
+        "company_id": "345"
+    },
+    {
+        "ticker": "CAMB3",
+        "stock_id": "440",
+        "company_id": "337"
+    },
+    {
+        "ticker": "CAMB4",
+        "stock_id": "441",
+        "company_id": "337"
+    },
+    {
+        "ticker": "CBEE3",
+        "stock_id": "88",
+        "company_id": "69"
+    },
+    {
+        "ticker": "CASH3",
+        "stock_id": "563",
+        "company_id": "393"
+    },
+    {
+        "ticker": "CAML3",
+        "stock_id": "90",
+        "company_id": "71"
+    },
+    {
+        "ticker": "CBAV3",
+        "stock_id": "611",
+        "company_id": "509"
+    },
+    {
+        "ticker": "CCRO3",
+        "stock_id": "257",
+        "company_id": "191"
+    },
+    {
+        "ticker": "CCXC3",
+        "stock_id": "444",
+        "company_id": "339"
+    },
+    {
+        "ticker": "CEAB3",
+        "stock_id": "121",
+        "company_id": "88"
+    },
+    {
+        "ticker": "CEBR5",
+        "stock_id": "424",
+        "company_id": "327"
+    },
+    {
+        "ticker": "CEBR3",
+        "stock_id": "423",
+        "company_id": "327"
+    },
+    {
+        "ticker": "CEBR6",
+        "stock_id": "425",
+        "company_id": "327"
+    },
+    {
+        "ticker": "CEDO4",
+        "stock_id": "422",
+        "company_id": "326"
+    },
+    {
+        "ticker": "CEDO3",
+        "stock_id": "421",
+        "company_id": "326"
+    },
+    {
+        "ticker": "CEED4",
+        "stock_id": "326",
+        "company_id": "235"
+    },
+    {
+        "ticker": "CEGR3",
+        "stock_id": "415",
+        "company_id": "323"
+    },
+    {
+        "ticker": "CEEB3",
+        "stock_id": "316",
+        "company_id": "230"
+    },
+    {
+        "ticker": "CEEB5",
+        "stock_id": "317",
+        "company_id": "230"
+    },
+    {
+        "ticker": "CEED3",
+        "stock_id": "325",
+        "company_id": "235"
+    },
+    {
+        "ticker": "COGN3",
+        "stock_id": "132",
+        "company_id": "96"
+    },
+    {
+        "ticker": "CPRE3",
+        "stock_id": "269",
+        "company_id": "199"
+    },
+    {
+        "ticker": "CPLE3",
+        "stock_id": "263",
+        "company_id": "196"
+    },
+    {
+        "ticker": "CRDE3",
+        "stock_id": "111",
+        "company_id": "81"
+    },
+    {
+        "ticker": "CPLE5",
+        "stock_id": "265",
+        "company_id": "196"
+    },
+    {
+        "ticker": "CPLE6",
+        "stock_id": "264",
+        "company_id": "196"
+    },
+    {
+        "ticker": "CREM3",
+        "stock_id": "539",
+        "company_id": "418"
+    },
+    {
+        "ticker": "CRIV3",
+        "stock_id": "430",
+        "company_id": "330"
+    },
+    {
+        "ticker": "CRIV4",
+        "stock_id": "431",
+        "company_id": "330"
+    },
+    {
+        "ticker": "CRPG5",
+        "stock_id": "271",
+        "company_id": "200"
+    },
+    {
+        "ticker": "CRFB3",
+        "stock_id": "251",
+        "company_id": "174"
+    },
+    {
+        "ticker": "CRPG3",
+        "stock_id": "272",
+        "company_id": "200"
+    },
+    {
+        "ticker": "CSAB3",
+        "stock_id": "426",
+        "company_id": "328"
+    },
+    {
+        "ticker": "CSAB4",
+        "stock_id": "427",
+        "company_id": "328"
+    },
+    {
+        "ticker": "CRPG6",
+        "stock_id": "270",
+        "company_id": "200"
+    },
+    {
+        "ticker": "CSED3",
+        "stock_id": "573",
+        "company_id": "395"
+    },
+    {
+        "ticker": "CSAN3",
+        "stock_id": "48",
+        "company_id": "42"
+    },
+    {
+        "ticker": "CSMG3",
+        "stock_id": "262",
+        "company_id": "195"
+    },
+    {
+        "ticker": "CSNA3",
+        "stock_id": "131",
+        "company_id": "95"
+    },
+    {
+        "ticker": "CSRN5",
+        "stock_id": "248",
+        "company_id": "169"
+    },
+    {
+        "ticker": "CSRN3",
+        "stock_id": "247",
+        "company_id": "169"
+    },
+    {
+        "ticker": "CSUD3",
+        "stock_id": "273",
+        "company_id": "201"
+    },
+    {
+        "ticker": "CSRN6",
+        "stock_id": "249",
+        "company_id": "169"
+    },
+    {
+        "ticker": "CTKA3",
+        "stock_id": "368",
+        "company_id": "296"
+    },
+    {
+        "ticker": "CTNM3",
+        "stock_id": "267",
+        "company_id": "197"
+    },
+    {
+        "ticker": "CTNM4",
+        "stock_id": "266",
+        "company_id": "197"
+    },
+    {
+        "ticker": "CTSA8",
+        "stock_id": "398",
+        "company_id": "314"
+    },
+    {
+        "ticker": "CTSA3",
+        "stock_id": "396",
+        "company_id": "314"
+    },
+    {
+        "ticker": "CTSA4",
+        "stock_id": "397",
+        "company_id": "314"
+    },
+    {
+        "ticker": "CURY3",
+        "stock_id": "552",
+        "company_id": "280"
+    },
+    {
+        "ticker": "CVCB3",
+        "stock_id": "77",
+        "company_id": "61"
+    },
+    {
+        "ticker": "CXSE3",
+        "stock_id": "590",
+        "company_id": "283"
+    },
+    {
+        "ticker": "CYRE3",
+        "stock_id": "128",
+        "company_id": "92"
+    },
+    {
+        "ticker": "DESK3",
+        "stock_id": "609",
+        "company_id": "505"
+    },
+    {
+        "ticker": "DASA3",
+        "stock_id": "130",
+        "company_id": "94"
+    },
+    {
+        "ticker": "DEXP3",
+        "stock_id": "464",
+        "company_id": "352"
+    },
+    {
+        "ticker": "DEXP4",
+        "stock_id": "465",
+        "company_id": "352"
+    },
+    {
+        "ticker": "DMMO3",
+        "stock_id": "279",
+        "company_id": "205"
+    },
+    {
+        "ticker": "DMVF3",
+        "stock_id": "458",
+        "company_id": "348"
+    },
+    {
+        "ticker": "DOHL4",
+        "stock_id": "277",
+        "company_id": "204"
+    },
+    {
+        "ticker": "DOHL3",
+        "stock_id": "278",
+        "company_id": "204"
+    },
+    {
+        "ticker": "DOTZ3",
+        "stock_id": "623",
+        "company_id": "466"
+    },
+    {
+        "ticker": "DTCY3",
+        "stock_id": "459",
+        "company_id": "349"
+    },
+    {
+        "ticker": "DXCO3",
+        "stock_id": "134",
+        "company_id": "98"
+    },
+    {
+        "ticker": "EALT3",
+        "stock_id": "136",
+        "company_id": "100"
+    },
+    {
+        "ticker": "EALT4",
+        "stock_id": "137",
+        "company_id": "100"
+    },
+    {
+        "ticker": "EEEL4",
+        "stock_id": "560",
+        "company_id": "237"
+    },
+    {
+        "ticker": "ECPR4",
+        "stock_id": "282",
+        "company_id": "207"
+    },
+    {
+        "ticker": "EGIE3",
+        "stock_id": "143",
+        "company_id": "104"
+    },
+    {
+        "ticker": "ELEK3",
+        "stock_id": "519",
+        "company_id": "385"
+    },
+    {
+        "ticker": "ELMD3",
+        "stock_id": "574",
+        "company_id": "456"
+    },
+    {
+        "ticker": "ELET6",
+        "stock_id": "140",
+        "company_id": "101"
+    },
+    {
+        "ticker": "ELET3",
+        "stock_id": "138",
+        "company_id": "101"
+    },
+    {
+        "ticker": "ELET5",
+        "stock_id": "139",
+        "company_id": "101"
+    },
+    {
+        "ticker": "ENEV3",
+        "stock_id": "142",
+        "company_id": "103"
+    },
+    {
+        "ticker": "EMBR3",
+        "stock_id": "135",
+        "company_id": "99"
+    },
+    {
+        "ticker": "ENAT3",
+        "stock_id": "141",
+        "company_id": "102"
+    },
+    {
+        "ticker": "ENGI11",
+        "stock_id": "97",
+        "company_id": "73"
+    },
+    {
+        "ticker": "EMAE4",
+        "stock_id": "280",
+        "company_id": "206"
+    },
+    {
+        "ticker": "ENBR3",
+        "stock_id": "67",
+        "company_id": "53"
+    },
+    {
+        "ticker": "EPAR3",
+        "stock_id": "438",
+        "company_id": "335"
+    },
+    {
+        "ticker": "ENGI3",
+        "stock_id": "99",
+        "company_id": "73"
+    },
+    {
+        "ticker": "ENGI4",
+        "stock_id": "98",
+        "company_id": "73"
+    },
+    {
+        "ticker": "ENMT3",
+        "stock_id": "285",
+        "company_id": "208"
+    },
+    {
+        "ticker": "EQPA3",
+        "stock_id": "286",
+        "company_id": "209"
+    },
+    {
+        "ticker": "ENJU3",
+        "stock_id": "527",
+        "company_id": ""
+    },
+    {
+        "ticker": "EQPA7",
+        "stock_id": "289",
+        "company_id": "209"
+    },
+    {
+        "ticker": "ESPA3",
+        "stock_id": "567",
+        "company_id": "454"
+    },
+    {
+        "ticker": "EQTL3",
+        "stock_id": "150",
+        "company_id": "109"
+    },
+    {
+        "ticker": "ESTR4",
+        "stock_id": "154",
+        "company_id": "112"
+    },
+    {
+        "ticker": "EQPA6",
+        "stock_id": "288",
+        "company_id": "209"
+    },
+    {
+        "ticker": "EQPA5",
+        "stock_id": "287",
+        "company_id": "209"
+    },
+    {
+        "ticker": "ESTR3",
+        "stock_id": "153",
+        "company_id": "112"
+    },
+    {
+        "ticker": "ETER3",
+        "stock_id": "155",
+        "company_id": "113"
+    },
+    {
+        "ticker": "EUCA4",
+        "stock_id": "335",
+        "company_id": "244"
+    },
+    {
+        "ticker": "FBMC3",
+        "stock_id": "540",
+        "company_id": "419"
+    },
+    {
+        "ticker": "EUCA3",
+        "stock_id": "334",
+        "company_id": "244"
+    },
+    {
+        "ticker": "FBMC4",
+        "stock_id": "541",
+        "company_id": "419"
+    },
+    {
+        "ticker": "EZTC3",
+        "stock_id": "151",
+        "company_id": "110"
+    },
+    {
+        "ticker": "EVEN3",
+        "stock_id": "144",
+        "company_id": "105"
+    },
+    {
+        "ticker": "GETT3",
+        "stock_id": "627",
+        "company_id": "545"
+    },
+    {
+        "ticker": "GETT4",
+        "stock_id": "628",
+        "company_id": "545"
+    },
+    {
+        "ticker": "GFSA3",
+        "stock_id": "152",
+        "company_id": "111"
+    },
+    {
+        "ticker": "GOLL4",
+        "stock_id": "76",
+        "company_id": "60"
+    },
+    {
+        "ticker": "GGPS3",
+        "stock_id": "588",
+        "company_id": "481"
+    },
+    {
+        "ticker": "GMAT3",
+        "stock_id": "525",
+        "company_id": "267"
+    },
+    {
+        "ticker": "GNDI3",
+        "stock_id": "63",
+        "company_id": "31"
+    },
+    {
+        "ticker": "GGBR3",
+        "stock_id": "53",
+        "company_id": "47"
+    },
+    {
+        "ticker": "GPAR3",
+        "stock_id": "445",
+        "company_id": "340"
+    },
+    {
+        "ticker": "GOAU4",
+        "stock_id": "32",
+        "company_id": "38"
+    },
+    {
+        "ticker": "GRND3",
+        "stock_id": "161",
+        "company_id": "117"
+    },
+    {
+        "ticker": "GGBR4",
+        "stock_id": "54",
+        "company_id": "47"
+    },
+    {
+        "ticker": "GUAR4",
+        "stock_id": "636",
+        "company_id": "68"
+    },
+    {
+        "ticker": "HAGA3",
+        "stock_id": "366",
+        "company_id": "295"
+    },
+    {
+        "ticker": "HETA4",
+        "stock_id": "468",
+        "company_id": "354"
+    },
+    {
+        "ticker": "HGTX3",
+        "stock_id": "124",
+        "company_id": "91"
+    },
+    {
+        "ticker": "HBRE3",
+        "stock_id": "582",
+        "company_id": "403"
+    },
+    {
+        "ticker": "HETA3",
+        "stock_id": "467",
+        "company_id": "354"
+    },
+    {
+        "ticker": "HBTS5",
+        "stock_id": "294",
+        "company_id": "213"
+    },
+    {
+        "ticker": "HAPV3",
+        "stock_id": "162",
+        "company_id": "118"
+    },
+    {
+        "ticker": "HBSA3",
+        "stock_id": "553",
+        "company_id": "289"
+    },
+    {
+        "ticker": "HBOR3",
+        "stock_id": "344",
+        "company_id": "248"
+    },
+    {
+        "ticker": "HYPE3",
+        "stock_id": "302",
+        "company_id": "220"
+    },
+    {
+        "ticker": "HOOT4",
+        "stock_id": "470",
+        "company_id": "355"
+    },
+    {
+        "ticker": "IDVL3",
+        "stock_id": "236",
+        "company_id": "181"
+    },
+    {
+        "ticker": "IDVL4",
+        "stock_id": "237",
+        "company_id": "181"
+    },
+    {
+        "ticker": "IFCM3",
+        "stock_id": "596",
+        "company_id": "492"
+    },
+    {
+        "ticker": "IGBR3",
+        "stock_id": "471",
+        "company_id": "356"
+    },
+    {
+        "ticker": "IGTI3",
+        "stock_id": "361",
+        "company_id": "292"
+    },
+    {
+        "ticker": "IGTA3",
+        "stock_id": "163",
+        "company_id": "119"
+    },
+    {
+        "ticker": "IGTI11",
+        "stock_id": "639",
+        "company_id": "292"
+    },
+    {
+        "ticker": "INEP3",
+        "stock_id": "473",
+        "company_id": "358"
+    },
+    {
+        "ticker": "INEP4",
+        "stock_id": "474",
+        "company_id": "358"
+    },
+    {
+        "ticker": "ITEC3",
+        "stock_id": "543",
+        "company_id": "421"
+    },
+    {
+        "ticker": "INTB3",
+        "stock_id": "566",
+        "company_id": "443"
+    },
+    {
+        "ticker": "IRBR3",
+        "stock_id": "96",
+        "company_id": "59"
+    },
+    {
+        "ticker": "ITSA3",
+        "stock_id": "1",
+        "company_id": "1"
+    },
+    {
+        "ticker": "ITUB4",
+        "stock_id": "44",
+        "company_id": "36"
+    },
+    {
+        "ticker": "ITUB3",
+        "stock_id": "43",
+        "company_id": "36"
+    },
+    {
+        "ticker": "JALL3",
+        "stock_id": "571",
+        "company_id": "448"
+    },
+    {
+        "ticker": "JBSS3",
+        "stock_id": "29",
+        "company_id": "30"
+    },
+    {
+        "ticker": "JFEN3",
+        "stock_id": "479",
+        "company_id": "361"
+    },
+    {
+        "ticker": "JHSF3",
+        "stock_id": "165",
+        "company_id": "121"
+    },
+    {
+        "ticker": "JOPA4",
+        "stock_id": "363",
+        "company_id": "293"
+    },
+    {
+        "ticker": "JSLG3",
+        "stock_id": "166",
+        "company_id": "122"
+    },
+    {
+        "ticker": "KLBN3",
+        "stock_id": "6",
+        "company_id": "8"
+    },
+    {
+        "ticker": "KEPL3",
+        "stock_id": "323",
+        "company_id": "233"
+    },
+    {
+        "ticker": "KLBN4",
+        "stock_id": "7",
+        "company_id": "8"
+    },
+    {
+        "ticker": "KRSA3",
+        "stock_id": "595",
+        "company_id": "480"
+    },
+    {
+        "ticker": "LAVV3",
+        "stock_id": "355",
+        "company_id": "258"
+    },
+    {
+        "ticker": "LCAM3",
+        "stock_id": "170",
+        "company_id": "126"
+    },
+    {
+        "ticker": "LAND3",
+        "stock_id": "646",
+        "company_id": "563"
+    },
+    {
+        "ticker": "LEVE3",
+        "stock_id": "145",
+        "company_id": "106"
+    },
+    {
+        "ticker": "LINX3",
+        "stock_id": "168",
+        "company_id": "124"
+    },
+    {
+        "ticker": "LIGT3",
+        "stock_id": "167",
+        "company_id": "123"
+    },
+    {
+        "ticker": "LJQQ3",
+        "stock_id": "558",
+        "company_id": "255"
+    },
+    {
+        "ticker": "LOGN3",
+        "stock_id": "172",
+        "company_id": "128"
+    },
+    {
+        "ticker": "LOGG3",
+        "stock_id": "171",
+        "company_id": "127"
+    },
+    {
+        "ticker": "LREN3",
+        "stock_id": "15",
+        "company_id": "20"
+    },
+    {
+        "ticker": "LUPA3",
+        "stock_id": "315",
+        "company_id": "229"
+    },
+    {
+        "ticker": "LVTC3",
+        "stock_id": "613",
+        "company_id": "465"
+    },
+    {
+        "ticker": "LUXM4",
+        "stock_id": "408",
+        "company_id": "319"
+    },
+    {
+        "ticker": "LWSA3",
+        "stock_id": "71",
+        "company_id": "55"
+    },
+    {
+        "ticker": "LPSB3",
+        "stock_id": "343",
+        "company_id": "247"
+    },
+    {
+        "ticker": "LUXM3",
+        "stock_id": "407",
+        "company_id": "319"
+    },
+    {
+        "ticker": "MAPT4",
+        "stock_id": "509",
+        "company_id": "378"
+    },
+    {
+        "ticker": "MAPT3",
+        "stock_id": "508",
+        "company_id": "378"
+    },
+    {
+        "ticker": "MBLY3",
+        "stock_id": "569",
+        "company_id": "449"
+    },
+    {
+        "ticker": "MATD3",
+        "stock_id": "592",
+        "company_id": "471"
+    },
+    {
+        "ticker": "MDIA3",
+        "stock_id": "79",
+        "company_id": "63"
+    },
+    {
+        "ticker": "MERC4",
+        "stock_id": "375",
+        "company_id": "299"
+    },
+    {
+        "ticker": "MGEL3",
+        "stock_id": "370",
+        "company_id": "297"
+    },
+    {
+        "ticker": "MEGA3",
+        "stock_id": "295",
+        "company_id": "215"
+    },
+    {
+        "ticker": "MGEL4",
+        "stock_id": "371",
+        "company_id": "297"
+    },
+    {
+        "ticker": "MGLU3",
+        "stock_id": "59",
+        "company_id": "22"
+    },
+    {
+        "ticker": "MERC3",
+        "stock_id": "374",
+        "company_id": "299"
+    },
+    {
+        "ticker": "MELK3",
+        "stock_id": "554",
+        "company_id": ""
+    },
+    {
+        "ticker": "MILS3",
+        "stock_id": "177",
+        "company_id": "132"
+    },
+    {
+        "ticker": "MLAS3",
+        "stock_id": "612",
+        "company_id": "504"
+    },
+    {
+        "ticker": "MMAQ4",
+        "stock_id": "483",
+        "company_id": "363"
+    },
+    {
+        "ticker": "MMXM3",
+        "stock_id": "484",
+        "company_id": "364"
+    },
+    {
+        "ticker": "MWET3",
+        "stock_id": "409",
+        "company_id": "320"
+    },
+    {
+        "ticker": "MTIG4",
+        "stock_id": "481",
+        "company_id": "362"
+    },
+    {
+        "ticker": "MWET4",
+        "stock_id": "410",
+        "company_id": "320"
+    },
+    {
+        "ticker": "MTIG3",
+        "stock_id": "480",
+        "company_id": "362"
+    },
+    {
+        "ticker": "MTSA4",
+        "stock_id": "314",
+        "company_id": "228"
+    },
+    {
+        "ticker": "MTRE3",
+        "stock_id": "222",
+        "company_id": "186"
+    },
+    {
+        "ticker": "MYPK3",
+        "stock_id": "149",
+        "company_id": "108"
+    },
+    {
+        "ticker": "NAFG3",
+        "stock_id": "381",
+        "company_id": "304"
+    },
+    {
+        "ticker": "NEXP3",
+        "stock_id": "647",
+        "company_id": "564"
+    },
+    {
+        "ticker": "NAFG4",
+        "stock_id": "382",
+        "company_id": "304"
+    },
+    {
+        "ticker": "NEOE3",
+        "stock_id": "179",
+        "company_id": "134"
+    },
+    {
+        "ticker": "NUTR3",
+        "stock_id": "383",
+        "company_id": "305"
+    },
+    {
+        "ticker": "NTCO3",
+        "stock_id": "178",
+        "company_id": "133"
+    },
+    {
+        "ticker": "NGRD3",
+        "stock_id": "565",
+        "company_id": "432"
+    },
+    {
+        "ticker": "NINJ3",
+        "stock_id": "599",
+        "company_id": "477"
+    },
+    {
+        "ticker": "NORD3",
+        "stock_id": "486",
+        "company_id": "366"
+    },
+    {
+        "ticker": "ODER3",
+        "stock_id": "452",
+        "company_id": "344"
+    },
+    {
+        "ticker": "OGXP3",
+        "stock_id": "547",
+        "company_id": "424"
+    },
+    {
+        "ticker": "ODER4",
+        "stock_id": "451",
+        "company_id": "344"
+    },
+    {
+        "ticker": "OFSA3",
+        "stock_id": "310",
+        "company_id": "224"
+    },
+    {
+        "ticker": "ODPV3",
+        "stock_id": "180",
+        "company_id": "135"
+    },
+    {
+        "ticker": "OIBR3",
+        "stock_id": "20",
+        "company_id": "24"
+    },
+    {
+        "ticker": "ORVR3",
+        "stock_id": "579",
+        "company_id": "445"
+    },
+    {
+        "ticker": "OIBR4",
+        "stock_id": "21",
+        "company_id": "24"
+    },
+    {
+        "ticker": "OPCT3",
+        "stock_id": "578",
+        "company_id": "447"
+    },
+    {
+        "ticker": "ONCO3",
+        "stock_id": "617",
+        "company_id": "511"
+    },
+    {
+        "ticker": "OSXB3",
+        "stock_id": "181",
+        "company_id": "136"
+    },
+    {
+        "ticker": "PATI3",
+        "stock_id": "384",
+        "company_id": "306"
+    },
+    {
+        "ticker": "PATI4",
+        "stock_id": "385",
+        "company_id": "306"
+    },
+    {
+        "ticker": "PARD3",
+        "stock_id": "30",
+        "company_id": "37"
+    },
+    {
+        "ticker": "PCAR3",
+        "stock_id": "45",
+        "company_id": "40"
+    },
+    {
+        "ticker": "PDGR3",
+        "stock_id": "328",
+        "company_id": "238"
+    },
+    {
+        "ticker": "PCAR4",
+        "stock_id": "261",
+        "company_id": "40"
+    },
+    {
+        "ticker": "PDTC3",
+        "stock_id": "488",
+        "company_id": "368"
+    },
+    {
+        "ticker": "PEAB4",
+        "stock_id": "429",
+        "company_id": "329"
+    },
+    {
+        "ticker": "PEAB3",
+        "stock_id": "428",
+        "company_id": "329"
+    },
+    {
+        "ticker": "PFRM3",
+        "stock_id": "225",
+        "company_id": "188"
+    },
+    {
+        "ticker": "PINE3",
+        "stock_id": "321",
+        "company_id": "84"
+    },
+    {
+        "ticker": "PETZ3",
+        "stock_id": "356",
+        "company_id": "259"
+    },
+    {
+        "ticker": "PETR3",
+        "stock_id": "2",
+        "company_id": "2"
+    },
+    {
+        "ticker": "PETR4",
+        "stock_id": "4",
+        "company_id": "2"
+    },
+    {
+        "ticker": "PINE4",
+        "stock_id": "114",
+        "company_id": "84"
+    },
+    {
+        "ticker": "PLAS3",
+        "stock_id": "386",
+        "company_id": "307"
+    },
+    {
+        "ticker": "PLPL3",
+        "stock_id": "357",
+        "company_id": "260"
+    },
+    {
+        "ticker": "PMAM3",
+        "stock_id": "182",
+        "company_id": "137"
+    },
+    {
+        "ticker": "PNVL3",
+        "stock_id": "275",
+        "company_id": "202"
+    },
+    {
+        "ticker": "PNVL4",
+        "stock_id": "274",
+        "company_id": "202"
+    },
+    {
+        "ticker": "POMO3",
+        "stock_id": "224",
+        "company_id": "187"
+    },
+    {
+        "ticker": "PRIO3",
+        "stock_id": "70",
+        "company_id": "54"
+    },
+    {
+        "ticker": "PSSA3",
+        "stock_id": "185",
+        "company_id": "139"
+    },
+    {
+        "ticker": "QUAL3",
+        "stock_id": "186",
+        "company_id": "140"
+    },
+    {
+        "ticker": "RADL3",
+        "stock_id": "78",
+        "company_id": "62"
+    },
+    {
+        "ticker": "RAIL3",
+        "stock_id": "57",
+        "company_id": "49"
+    },
+    {
+        "ticker": "RANI3",
+        "stock_id": "260",
+        "company_id": "193"
+    },
+    {
+        "ticker": "RAPT3",
+        "stock_id": "188",
+        "company_id": "142"
+    },
+    {
+        "ticker": "RCSL3",
+        "stock_id": "389",
+        "company_id": "310"
+    },
+    {
+        "ticker": "RAPT4",
+        "stock_id": "189",
+        "company_id": "142"
+    },
+    {
+        "ticker": "RCSL4",
+        "stock_id": "390",
+        "company_id": "310"
+    },
+    {
+        "ticker": "RDNI3",
+        "stock_id": "313",
+        "company_id": "227"
+    },
+    {
+        "ticker": "RDOR3",
+        "stock_id": "564",
+        "company_id": "406"
+    },
+    {
+        "ticker": "REDE3",
+        "stock_id": "360",
+        "company_id": "291"
+    },
+    {
+        "ticker": "RANI4",
+        "stock_id": "259",
+        "company_id": "193"
+    },
+    {
+        "ticker": "RECV3",
+        "stock_id": "598",
+        "company_id": "476"
+    },
+    {
+        "ticker": "RENT3",
+        "stock_id": "169",
+        "company_id": "125"
+    },
+    {
+        "ticker": "RLOG3",
+        "stock_id": "49",
+        "company_id": "43"
+    },
+    {
+        "ticker": "RNEW3",
+        "stock_id": "393",
+        "company_id": "313"
+    },
+    {
+        "ticker": "RNEW11",
+        "stock_id": "395",
+        "company_id": "313"
+    },
+    {
+        "ticker": "RNEW4",
+        "stock_id": "394",
+        "company_id": "313"
+    },
+    {
+        "ticker": "RPAD3",
+        "stock_id": "652",
+        "company_id": "565"
+    },
+    {
+        "ticker": "ROMI3",
+        "stock_id": "303",
+        "company_id": "221"
+    },
+    {
+        "ticker": "RPAD5",
+        "stock_id": "651",
+        "company_id": "565"
+    },
+    {
+        "ticker": "RPAD6",
+        "stock_id": "650",
+        "company_id": "565"
+    },
+    {
+        "ticker": "RPMG3",
+        "stock_id": "392",
+        "company_id": "312"
+    },
+    {
+        "ticker": "RSID3",
+        "stock_id": "194",
+        "company_id": "145"
+    },
+    {
+        "ticker": "RRRP3",
+        "stock_id": "581",
+        "company_id": "400"
+    },
+    {
+        "ticker": "RSUL4",
+        "stock_id": "378",
+        "company_id": "301"
+    },
+    {
+        "ticker": "SANB11",
+        "stock_id": "86",
+        "company_id": "66"
+    },
+    {
+        "ticker": "SAPR11",
+        "stock_id": "25",
+        "company_id": "27"
+    },
+    {
+        "ticker": "SANB3",
+        "stock_id": "84",
+        "company_id": "66"
+    },
+    {
+        "ticker": "SANB4",
+        "stock_id": "85",
+        "company_id": "66"
+    },
+    {
+        "ticker": "SAPR3",
+        "stock_id": "23",
+        "company_id": "27"
+    },
+    {
+        "ticker": "SAPR4",
+        "stock_id": "24",
+        "company_id": "27"
+    },
+    {
+        "ticker": "SBFG3",
+        "stock_id": "102",
+        "company_id": "76"
+    },
+    {
+        "ticker": "SCAR3",
+        "stock_id": "309",
+        "company_id": "223"
+    },
+    {
+        "ticker": "SBSP3",
+        "stock_id": "296",
+        "company_id": "216"
+    },
+    {
+        "ticker": "SEDU3",
+        "stock_id": "548",
+        "company_id": "425"
+    },
+    {
+        "ticker": "SEQL3",
+        "stock_id": "556",
+        "company_id": "270"
+    },
+    {
+        "ticker": "SGPS3",
+        "stock_id": "345",
+        "company_id": "249"
+    },
+    {
+        "ticker": "SHOW3",
+        "stock_id": "209",
+        "company_id": "156"
+    },
+    {
+        "ticker": "SIMH3",
+        "stock_id": "559",
+        "company_id": "441"
+    },
+    {
+        "ticker": "SLCE3",
+        "stock_id": "205",
+        "company_id": "153"
+    },
+    {
+        "ticker": "SLED4",
+        "stock_id": "193",
+        "company_id": "144"
+    },
+    {
+        "ticker": "SMFT3",
+        "stock_id": "562",
+        "company_id": "442"
+    },
+    {
+        "ticker": "SLED3",
+        "stock_id": "192",
+        "company_id": "144"
+    },
+    {
+        "ticker": "SMLS3",
+        "stock_id": "208",
+        "company_id": "155"
+    },
+    {
+        "ticker": "SMTO3",
+        "stock_id": "297",
+        "company_id": "217"
+    },
+    {
+        "ticker": "SNSY5",
+        "stock_id": "493",
+        "company_id": "371"
+    },
+    {
+        "ticker": "SOJA3",
+        "stock_id": "597",
+        "company_id": "438"
+    },
+    {
+        "ticker": "SOMA3",
+        "stock_id": "466",
+        "company_id": "353"
+    },
+    {
+        "ticker": "SOND3",
+        "stock_id": "500",
+        "company_id": "374"
+    },
+    {
+        "ticker": "SOND5",
+        "stock_id": "501",
+        "company_id": "374"
+    },
+    {
+        "ticker": "SOND6",
+        "stock_id": "502",
+        "company_id": "374"
+    },
+    {
+        "ticker": "TAEE11",
+        "stock_id": "38",
+        "company_id": "29"
+    },
+    {
+        "ticker": "TAEE3",
+        "stock_id": "36",
+        "company_id": "29"
+    },
+    {
+        "ticker": "TAEE4",
+        "stock_id": "37",
+        "company_id": "29"
+    },
+    {
+        "ticker": "TASA3",
+        "stock_id": "198",
+        "company_id": "148"
+    },
+    {
+        "ticker": "TASA4",
+        "stock_id": "199",
+        "company_id": "148"
+    },
+    {
+        "ticker": "TCNO3",
+        "stock_id": "399",
+        "company_id": "315"
+    },
+    {
+        "ticker": "TCNO4",
+        "stock_id": "400",
+        "company_id": "315"
+    },
+    {
+        "ticker": "TCSA3",
+        "stock_id": "203",
+        "company_id": "151"
+    },
+    {
+        "ticker": "TECN3",
+        "stock_id": "329",
+        "company_id": "239"
+    },
+    {
+        "ticker": "TEKA3",
+        "stock_id": "401",
+        "company_id": "316"
+    },
+    {
+        "ticker": "TELB3",
+        "stock_id": "200",
+        "company_id": "149"
+    },
+    {
+        "ticker": "TEKA4",
+        "stock_id": "402",
+        "company_id": "316"
+    },
+    {
+        "ticker": "TELB4",
+        "stock_id": "201",
+        "company_id": "149"
+    },
+    {
+        "ticker": "TEND3",
+        "stock_id": "133",
+        "company_id": "97"
+    },
+    {
+        "ticker": "TESA3",
+        "stock_id": "324",
+        "company_id": "234"
+    },
+    {
+        "ticker": "TFCO4",
+        "stock_id": "526",
+        "company_id": "281"
+    },
+    {
+        "ticker": "TIET11",
+        "stock_id": "218",
+        "company_id": "166"
+    },
+    {
+        "ticker": "TIET3",
+        "stock_id": "219",
+        "company_id": "166"
+    },
+    {
+        "ticker": "TIET4",
+        "stock_id": "220",
+        "company_id": "166"
+    },
+    {
+        "ticker": "TGMA3",
+        "stock_id": "311",
+        "company_id": "225"
+    },
+    {
+        "ticker": "TKNO4",
+        "stock_id": "404",
+        "company_id": "317"
+    },
+    {
+        "ticker": "TIMS3",
+        "stock_id": "202",
+        "company_id": "150"
+    },
+    {
+        "ticker": "TPIS3",
+        "stock_id": "330",
+        "company_id": "240"
+    },
+    {
+        "ticker": "TOYB4",
+        "stock_id": "550",
+        "company_id": "426"
+    },
+    {
+        "ticker": "TOTS3",
+        "stock_id": "210",
+        "company_id": "157"
+    },
+    {
+        "ticker": "TRAD3",
+        "stock_id": "615",
+        "company_id": "506"
+    },
+    {
+        "ticker": "TOYB3",
+        "stock_id": "549",
+        "company_id": "426"
+    },
+    {
+        "ticker": "TRPL4",
+        "stock_id": "72",
+        "company_id": "56"
+    },
+    {
+        "ticker": "TRPL3",
+        "stock_id": "73",
+        "company_id": "56"
+    },
+    {
+        "ticker": "TRIS3",
+        "stock_id": "312",
+        "company_id": "226"
+    },
+    {
+        "ticker": "TUPY3",
+        "stock_id": "211",
+        "company_id": "158"
+    },
+    {
+        "ticker": "TTEN3",
+        "stock_id": "607",
+        "company_id": "514"
+    },
+    {
+        "ticker": "TXRX3",
+        "stock_id": "405",
+        "company_id": "318"
+    },
+    {
+        "ticker": "TXRX4",
+        "stock_id": "406",
+        "company_id": "318"
+    },
+    {
+        "ticker": "UCAS3",
+        "stock_id": "331",
+        "company_id": "241"
+    },
+    {
+        "ticker": "UGPA3",
+        "stock_id": "212",
+        "company_id": "159"
+    },
+    {
+        "ticker": "USIM5",
+        "stock_id": "34",
+        "company_id": "39"
+    },
+    {
+        "ticker": "USIM6",
+        "stock_id": "35",
+        "company_id": "39"
+    },
+    {
+        "ticker": "USIM3",
+        "stock_id": "33",
+        "company_id": "39"
+    },
+    {
+        "ticker": "UNIP5",
+        "stock_id": "300",
+        "company_id": "219"
+    },
+    {
+        "ticker": "UNIP6",
+        "stock_id": "299",
+        "company_id": "219"
+    },
+    {
+        "ticker": "UNIP3",
+        "stock_id": "301",
+        "company_id": "219"
+    },
+    {
+        "ticker": "VAMO3",
+        "stock_id": "575",
+        "company_id": "460"
+    },
+    {
+        "ticker": "VBBR3",
+        "stock_id": "244",
+        "company_id": "168"
+    },
+    {
+        "ticker": "VALE3",
+        "stock_id": "18",
+        "company_id": "21"
+    },
+    {
+        "ticker": "VIIA3",
+        "stock_id": "19",
+        "company_id": "23"
+    },
+    {
+        "ticker": "VIVA3",
+        "stock_id": "214",
+        "company_id": "161"
+    },
+    {
+        "ticker": "VLID3",
+        "stock_id": "213",
+        "company_id": "160"
+    },
+    {
+        "ticker": "VITT3",
+        "stock_id": "594",
+        "company_id": "453"
+    },
+    {
+        "ticker": "VIVT3",
+        "stock_id": "207",
+        "company_id": "154"
+    },
+    {
+        "ticker": "VULC3",
+        "stock_id": "215",
+        "company_id": "162"
+    },
+    {
+        "ticker": "VSTE3",
+        "stock_id": "351",
+        "company_id": "253"
+    },
+    {
+        "ticker": "VIVT4",
+        "stock_id": "206",
+        "company_id": "154"
+    },
+    {
+        "ticker": "VSPT4",
+        "stock_id": "462",
+        "company_id": "350"
+    },
+    {
+        "ticker": "WEGE3",
+        "stock_id": "22",
+        "company_id": "25"
+    },
+    {
+        "ticker": "ZAMP3",
+        "stock_id": "110",
+        "company_id": "80"
+    },
+    {
+        "ticker": "YDUQ3",
+        "stock_id": "216",
+        "company_id": "163"
+    },
+    {
+        "ticker": "WEST3",
+        "stock_id": "577",
+        "company_id": "450"
+    },
+    {
+        "ticker": "WHRL4",
+        "stock_id": "412",
+        "company_id": "321"
+    },
+    {
+        "ticker": "VVEO3",
+        "stock_id": "586",
+        "company_id": ""
+    },
+    {
+        "ticker": "WHRL3",
+        "stock_id": "411",
+        "company_id": ""
+    },
+    {
+        "ticker": "WLMM4",
+        "stock_id": "414",
+        "company_id": "322"
+    },
+    {
+        "ticker": "WLMM3",
+        "stock_id": "413",
+        "company_id": "322"
+    }
+]

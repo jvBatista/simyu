@@ -1,4 +1,4 @@
-// import puppeteer from 'puppeteer-core';
+import puppeteer from 'puppeteer-core';
 
 // export const scrapeCDI = async () => {
 //     const browser = await puppeteer.launch();
